@@ -1,0 +1,228 @@
+[2019-11-21 09:04:42 828][ServerService Thread Pool -- 77] INFO  [org.zkoss.zk.ui.http.WebManager <init> 114] - Starting ZK 7.0.3 CE (build: 2014090212)
+[2019-11-21 09:04:42 860][ServerService Thread Pool -- 77] INFO  [org.zkoss.zk.ui.sys.ConfigParser parseConfigXml 164] - Loading system default
+[2019-11-21 09:04:42 936][ServerService Thread Pool -- 77] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing vfs:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/lib/zul.jar/metainfo/zk/zk.xml
+[2019-11-21 09:04:43 000][ServerService Thread Pool -- 77] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/zk.xml
+[2019-11-21 09:04:49 198][ServerService Thread Pool -- 77] INFO  [org.quartz.simpl.SimpleThreadPool initialize 253] - Job execution threads will use class loader of thread: ServerService Thread Pool -- 77
+[2019-11-21 09:04:49 216][ServerService Thread Pool -- 77] INFO  [org.quartz.simpl.RAMJobStore initialize 143] - RAMJobStore initialized.
+[2019-11-21 09:04:49 217][ServerService Thread Pool -- 77] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 919] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-11-21 09:04:49 218][ServerService Thread Pool -- 77] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 923] - Quartz scheduler version: 1.4.5
+[2019-11-21 09:04:50 866][ServerService Thread Pool -- 77] INFO  [com.pro.proutils.schedule.Schedule add 129] - Add Job Name=[RoleInfo] Group=[DEFAULT] expression=[0 0 7 * * ?]
+[2019-11-21 09:04:50 867][ServerService Thread Pool -- 77] INFO  [org.quartz.core.QuartzScheduler start 370] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-11-21 09:04:52 983][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh_TW
+[2019-11-21 09:04:52 988][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl load 380] - Opening file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/i3-label_zh_TW.properties
+[2019-11-21 09:04:52 995][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh
+[2019-11-21 09:05:31 923][ServerService Thread Pool -- 79] INFO  [org.zkoss.zk.ui.http.WebManager <init> 114] - Starting ZK 7.0.3 CE (build: 2014090212)
+[2019-11-21 09:05:31 943][ServerService Thread Pool -- 79] INFO  [org.zkoss.zk.ui.sys.ConfigParser parseConfigXml 164] - Loading system default
+[2019-11-21 09:05:31 995][ServerService Thread Pool -- 79] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing vfs:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/lib/zul.jar/metainfo/zk/zk.xml
+[2019-11-21 09:05:32 009][ServerService Thread Pool -- 79] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/zk.xml
+[2019-11-21 09:05:34 476][ServerService Thread Pool -- 79] INFO  [org.quartz.simpl.SimpleThreadPool initialize 253] - Job execution threads will use class loader of thread: ServerService Thread Pool -- 79
+[2019-11-21 09:05:34 484][ServerService Thread Pool -- 79] INFO  [org.quartz.simpl.RAMJobStore initialize 143] - RAMJobStore initialized.
+[2019-11-21 09:05:34 485][ServerService Thread Pool -- 79] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 919] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-11-21 09:05:34 485][ServerService Thread Pool -- 79] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 923] - Quartz scheduler version: 1.4.5
+[2019-11-21 09:05:35 228][ServerService Thread Pool -- 79] INFO  [com.pro.proutils.schedule.Schedule add 129] - Add Job Name=[RoleInfo] Group=[DEFAULT] expression=[0 0 7 * * ?]
+[2019-11-21 09:05:35 229][ServerService Thread Pool -- 79] INFO  [org.quartz.core.QuartzScheduler start 370] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-11-21 09:05:39 432][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh_TW
+[2019-11-21 09:05:39 474][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl load 380] - Opening file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/i3-label_zh_TW.properties
+[2019-11-21 09:05:39 629][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh
+[2019-11-21 09:07:23 930][default task-1] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 94] - 127.0.0.1
+[2019-11-21 09:07:23 931][default task-1] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 99] - uid = SuperUser
+[2019-11-21 09:07:26 679][default task-1] INFO  [stdout write 71] - Seqno = 12
+[2019-11-21 09:07:26 692][default task-1] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-21 09:07:26 693][default task-1] INFO  [stdout write 71] - getSeqno spend 2104 msecs.
+[2019-11-21 09:07:26 694][default task-1] INFO  [stdout write 71] - getSeqno rc 13
+[2019-11-21 09:07:26 695][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 83] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() seqno : 13
+[2019-11-21 09:07:26 695][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 86] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() spend 2458 msecs
+[2019-11-21 09:07:27 636][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogbyOid_changestat_refid_fcode 671] - [CommonService] findChangeLogbyOid_changestat_refid_fcode spend 92 msecs
+[2019-11-21 09:07:27 906][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.SysPlayerSrv findRole 71] - [SysPlayerSrv] findRole spend 1162 msecs
+[2019-11-21 09:07:27 910][default task-1] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 962] - SuperUser驗證成功登入管理系統。
+[2019-11-21 09:07:28 389][default task-1] INFO  [stdout write 71] - Seqno = 54
+[2019-11-21 09:07:28 441][default task-1] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-21 09:07:28 448][default task-1] INFO  [stdout write 71] - getSeqno spend 62 msecs.
+[2019-11-21 09:07:28 449][default task-1] INFO  [stdout write 71] - getSeqno rc 55
+[2019-11-21 09:07:28 450][default task-1] INFO  [stdout write 71] - getseqno spend 63 msecs.
+[2019-11-21 09:07:28 457][default task-1] INFO  [stdout write 71] - doActionLog spend 153 msecs.
+[2019-11-21 09:07:28 458][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 129] - [ApLoginAuditLogService] insertApLoginAuditLog()
+[2019-11-21 09:07:28 463][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 150] - [ApLoginAuditLogService] insertApLoginAuditLog() spend 4 msecs
+[2019-11-21 09:07:28 464][default task-1] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 1129] - logindoLogin() spend 4535 msecs
+[2019-11-21 09:07:28 563][default task-1] DEBUG [com.pro.fxml.web.adm.util.baseComposer getSSID 110] - 
+[2019-11-21 09:08:10 435][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinTrade
+[2019-11-21 09:08:11 653][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinCommon
+[2019-11-21 09:08:12 555][default task-2] INFO  [stdout write 71] - Seqno = 55
+[2019-11-21 09:08:12 609][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-21 09:08:12 611][default task-2] INFO  [stdout write 71] - getSeqno spend 63 msecs.
+[2019-11-21 09:08:12 613][default task-2] INFO  [stdout write 71] - getSeqno rc 56
+[2019-11-21 09:08:12 616][default task-2] INFO  [stdout write 71] - getseqno spend 68 msecs.
+[2019-11-21 09:08:12 630][default task-2] INFO  [stdout write 71] - doActionLog spend 84 msecs.
+[2019-11-21 09:08:12 682][default task-2] ERROR [stderr write 71] - org.zkoss.zel.ELException: Error reading 'FVCModel' on type com.pro.fxml.web.FinCommonComposer
+[2019-11-21 09:08:12 690][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zel.BeanELResolver.getValue(BeanELResolver.java:95)
+[2019-11-21 09:08:12 692][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zel.CompositeELResolver.getValue(CompositeELResolver.java:66)
+[2019-11-21 09:08:12 693][default task-2] ERROR [stderr write 71] - 	at org.zkoss.xel.zel.XelELResolver.getValue(XelELResolver.java:72)
+[2019-11-21 09:08:12 696][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zel.impl.parser.AstValue.getValue(AstValue.java:177)
+[2019-11-21 09:08:12 698][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zel.impl.ValueExpressionImpl.getValue(ValueExpressionImpl.java:184)
+[2019-11-21 09:08:12 700][default task-2] ERROR [stderr write 71] - 	at org.zkoss.xel.zel.ELXelExpression.evaluate(ELXelExpression.java:40)
+[2019-11-21 09:08:12 702][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.xel.impl.SimpleEvaluator.evaluate(SimpleEvaluator.java:72)
+[2019-11-21 09:08:12 703][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.metainfo.AbstractEvalRef.evaluate(AbstractEvalRef.java:48)
+[2019-11-21 09:08:12 705][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.xel.ExValue.getValue(ExValue.java:109)
+[2019-11-21 09:08:12 706][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.util.ForEachImpl.eval(ForEachImpl.java:195)
+[2019-11-21 09:08:12 708][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.util.ForEachImpl.next(ForEachImpl.java:211)
+[2019-11-21 09:08:12 710][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.execCreate0(UiEngineImpl.java:742)
+[2019-11-21 09:08:12 711][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.execCreate(UiEngineImpl.java:699)
+[2019-11-21 09:08:12 714][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.execCreateChild0(UiEngineImpl.java:872)
+[2019-11-21 09:08:12 715][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.execCreateChild(UiEngineImpl.java:826)
+[2019-11-21 09:08:12 718][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.execCreate0(UiEngineImpl.java:735)
+[2019-11-21 09:08:12 720][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.execCreateChild(UiEngineImpl.java:797)
+[2019-11-21 09:08:12 721][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.execCreate0(UiEngineImpl.java:757)
+[2019-11-21 09:08:12 723][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.execCreate(UiEngineImpl.java:699)
+[2019-11-21 09:08:12 725][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.createComponents(UiEngineImpl.java:1080)
+[2019-11-21 09:08:12 727][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.AbstractExecution.createComponents0(AbstractExecution.java:251)
+[2019-11-21 09:08:12 729][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.AbstractExecution.createComponents(AbstractExecution.java:243)
+[2019-11-21 09:08:12 730][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.Executions.createComponents(Executions.java:176)
+[2019-11-21 09:08:12 732][default task-2] ERROR [stderr write 71] - 	at com.pro.fxml.web.adm.MenuComposer.getRedirect(MenuComposer.java:201)
+[2019-11-21 09:08:12 734][default task-2] ERROR [stderr write 71] - 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2019-11-21 09:08:12 735][default task-2] ERROR [stderr write 71] - 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+[2019-11-21 09:08:12 737][default task-2] ERROR [stderr write 71] - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+[2019-11-21 09:08:12 738][default task-2] ERROR [stderr write 71] - 	at java.lang.reflect.Method.invoke(Unknown Source)
+[2019-11-21 09:08:12 738][default task-2] ERROR [stderr write 71] - 	at bsh.Reflect.invokeMethod(Unknown Source)
+[2019-11-21 09:08:12 739][default task-2] ERROR [stderr write 71] - 	at bsh.Reflect.invokeStaticMethod(Unknown Source)
+[2019-11-21 09:08:12 739][default task-2] ERROR [stderr write 71] - 	at bsh.Name.invokeMethod(Unknown Source)
+[2019-11-21 09:08:12 739][default task-2] ERROR [stderr write 71] - 	at bsh.BSHMethodInvocation.eval(Unknown Source)
+[2019-11-21 09:08:12 740][default task-2] ERROR [stderr write 71] - 	at bsh.BSHPrimaryExpression.eval(Unknown Source)
+[2019-11-21 09:08:12 741][default task-2] ERROR [stderr write 71] - 	at bsh.BSHPrimaryExpression.eval(Unknown Source)
+[2019-11-21 09:08:12 742][default task-2] ERROR [stderr write 71] - 	at bsh.BSHBlock.evalBlock(Unknown Source)
+[2019-11-21 09:08:12 743][default task-2] ERROR [stderr write 71] - 	at bsh.BSHBlock.eval(Unknown Source)
+[2019-11-21 09:08:12 744][default task-2] ERROR [stderr write 71] - 	at bsh.BshMethod.invokeImpl(Unknown Source)
+[2019-11-21 09:08:12 744][default task-2] ERROR [stderr write 71] - 	at bsh.BshMethod.invoke(Unknown Source)
+[2019-11-21 09:08:12 745][default task-2] ERROR [stderr write 71] - 	at bsh.BshMethod.invoke(Unknown Source)
+[2019-11-21 09:08:12 746][default task-2] ERROR [stderr write 71] - 	at bsh.Name.invokeLocalMethod(Unknown Source)
+[2019-11-21 09:08:12 746][default task-2] ERROR [stderr write 71] - 	at bsh.Name.invokeMethod(Unknown Source)
+[2019-11-21 09:08:12 747][default task-2] ERROR [stderr write 71] - 	at bsh.BSHMethodInvocation.eval(Unknown Source)
+[2019-11-21 09:08:12 748][default task-2] ERROR [stderr write 71] - 	at bsh.BSHPrimaryExpression.eval(Unknown Source)
+[2019-11-21 09:08:12 748][default task-2] ERROR [stderr write 71] - 	at bsh.BSHPrimaryExpression.eval(Unknown Source)
+[2019-11-21 09:08:12 749][default task-2] ERROR [stderr write 71] - 	at bsh.Interpreter.eval(Unknown Source)
+[2019-11-21 09:08:12 750][default task-2] ERROR [stderr write 71] - 	at bsh.Interpreter.eval(Unknown Source)
+[2019-11-21 09:08:12 751][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.scripting.bsh.BSHInterpreter.exec(BSHInterpreter.java:133)
+[2019-11-21 09:08:12 751][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.scripting.util.GenericInterpreter.interpret(GenericInterpreter.java:328)
+[2019-11-21 09:08:12 751][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.PageImpl.interpret(PageImpl.java:900)
+[2019-11-21 09:08:12 752][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.AbstractComponent.service(AbstractComponent.java:2711)
+[2019-11-21 09:08:12 753][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.AbstractComponent.service(AbstractComponent.java:2664)
+[2019-11-21 09:08:12 754][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.EventProcessor.process(EventProcessor.java:136)
+[2019-11-21 09:08:12 755][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.processEvent(UiEngineImpl.java:1765)
+[2019-11-21 09:08:12 756][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.process(UiEngineImpl.java:1550)
+[2019-11-21 09:08:12 757][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.ui.impl.UiEngineImpl.execUpdate(UiEngineImpl.java:1260)
+[2019-11-21 09:08:12 757][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.au.http.DHtmlUpdateServlet.process(DHtmlUpdateServlet.java:603)
+[2019-11-21 09:08:12 758][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.au.http.DHtmlUpdateServlet.doGet(DHtmlUpdateServlet.java:485)
+[2019-11-21 09:08:12 759][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zk.au.http.DHtmlUpdateServlet.doPost(DHtmlUpdateServlet.java:494)
+[2019-11-21 09:08:12 760][default task-2] ERROR [stderr write 71] - 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:706)
+[2019-11-21 09:08:12 766][default task-2] ERROR [stderr write 71] - 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+[2019-11-21 09:08:12 768][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+[2019-11-21 09:08:12 769][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+[2019-11-21 09:08:12 770][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+[2019-11-21 09:08:12 771][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+[2019-11-21 09:08:12 773][default task-2] ERROR [stderr write 71] - 	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+[2019-11-21 09:08:12 774][default task-2] ERROR [stderr write 71] - 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[2019-11-21 09:08:12 775][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+[2019-11-21 09:08:12 776][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+[2019-11-21 09:08:12 777][default task-2] ERROR [stderr write 71] - 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[2019-11-21 09:08:12 777][default task-2] ERROR [stderr write 71] - 	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+[2019-11-21 09:08:12 778][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+[2019-11-21 09:08:12 779][default task-2] ERROR [stderr write 71] - 	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+[2019-11-21 09:08:12 780][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+[2019-11-21 09:08:12 781][default task-2] ERROR [stderr write 71] - 	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+[2019-11-21 09:08:12 782][default task-2] ERROR [stderr write 71] - 	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+[2019-11-21 09:08:12 783][default task-2] ERROR [stderr write 71] - 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[2019-11-21 09:08:12 783][default task-2] ERROR [stderr write 71] - 	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+[2019-11-21 09:08:12 784][default task-2] ERROR [stderr write 71] - 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[2019-11-21 09:08:12 785][default task-2] ERROR [stderr write 71] - 	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+[2019-11-21 09:08:12 786][default task-2] ERROR [stderr write 71] - 	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+[2019-11-21 09:08:12 787][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+[2019-11-21 09:08:12 788][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+[2019-11-21 09:08:12 788][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+[2019-11-21 09:08:12 789][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+[2019-11-21 09:08:12 790][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+[2019-11-21 09:08:12 792][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+[2019-11-21 09:08:12 793][default task-2] ERROR [stderr write 71] - 	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+[2019-11-21 09:08:12 794][default task-2] ERROR [stderr write 71] - 	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[2019-11-21 09:08:12 795][default task-2] ERROR [stderr write 71] - 	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[2019-11-21 09:08:12 797][default task-2] ERROR [stderr write 71] - 	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[2019-11-21 09:08:12 799][default task-2] ERROR [stderr write 71] - 	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+[2019-11-21 09:08:12 800][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+[2019-11-21 09:08:12 802][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+[2019-11-21 09:08:12 803][default task-2] ERROR [stderr write 71] - 	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+[2019-11-21 09:08:12 805][default task-2] ERROR [stderr write 71] - 	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:360)
+[2019-11-21 09:08:12 806][default task-2] ERROR [stderr write 71] - 	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:830)
+[2019-11-21 09:08:12 807][default task-2] ERROR [stderr write 71] - 	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+[2019-11-21 09:08:12 808][default task-2] ERROR [stderr write 71] - 	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+[2019-11-21 09:08:12 809][default task-2] ERROR [stderr write 71] - 	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+[2019-11-21 09:08:12 810][default task-2] ERROR [stderr write 71] - 	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+[2019-11-21 09:08:12 811][default task-2] ERROR [stderr write 71] - 	at java.lang.Thread.run(Unknown Source)
+[2019-11-21 09:08:12 812][default task-2] ERROR [stderr write 71] - Caused by: java.lang.NullPointerException
+[2019-11-21 09:08:12 813][default task-2] ERROR [stderr write 71] - 	at java.text.SimpleDateFormat.parse(Unknown Source)
+[2019-11-21 09:08:12 814][default task-2] ERROR [stderr write 71] - 	at java.text.DateFormat.parse(Unknown Source)
+[2019-11-21 09:08:12 815][default task-2] ERROR [stderr write 71] - 	at com.pro.fxml.web.FinCommonComposer.getFVCModel(FinCommonComposer.java:226)
+[2019-11-21 09:08:12 816][default task-2] ERROR [stderr write 71] - 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2019-11-21 09:08:12 816][default task-2] ERROR [stderr write 71] - 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+[2019-11-21 09:08:12 817][default task-2] ERROR [stderr write 71] - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+[2019-11-21 09:08:12 818][default task-2] ERROR [stderr write 71] - 	at java.lang.reflect.Method.invoke(Unknown Source)
+[2019-11-21 09:08:12 819][default task-2] ERROR [stderr write 71] - 	at org.zkoss.zel.BeanELResolver.getValue(BeanELResolver.java:89)
+[2019-11-21 09:08:12 820][default task-2] ERROR [stderr write 71] - 	... 100 more
+[2019-11-21 09:08:12 916][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FiscCheckInOut
+[2019-11-21 09:08:49 397][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =BankPara
+[2019-11-21 09:08:49 742][default task-2] INFO  [stdout write 71] - findList spend 61 msecs.
+[2019-11-21 09:08:53 384][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =SysPlayer
+[2019-11-21 09:08:56 070][default task-2] INFO  [stdout write 71] - Seqno = 56
+[2019-11-21 09:08:56 123][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-21 09:08:56 123][default task-2] INFO  [stdout write 71] - getSeqno spend 60 msecs.
+[2019-11-21 09:08:56 124][default task-2] INFO  [stdout write 71] - getSeqno rc 57
+[2019-11-21 09:08:56 125][default task-2] INFO  [stdout write 71] - getseqno spend 62 msecs.
+[2019-11-21 09:08:56 131][default task-2] INFO  [stdout write 71] - doActionLog spend 68 msecs.
+[2019-11-21 09:08:56 416][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogByUseridAndDepIdAndFunctioncode 106] - [CommonService] findChangeLogByUseridAndDepIdAndFunctioncode spend 36 msecs
+[2019-11-21 09:09:02 800][default task-2] INFO  [stdout write 71] - Seqno = 57
+[2019-11-21 09:09:02 850][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-21 09:09:02 851][default task-2] INFO  [stdout write 71] - getSeqno spend 56 msecs.
+[2019-11-21 09:09:02 852][default task-2] INFO  [stdout write 71] - getSeqno rc 58
+[2019-11-21 09:09:02 854][default task-2] INFO  [stdout write 71] - getseqno spend 58 msecs.
+[2019-11-21 09:09:02 860][default task-2] INFO  [stdout write 71] - doActionLog spend 65 msecs.
+[2019-11-21 09:09:03 117][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogByUseridAndDepIdAndFunctioncode 106] - [CommonService] findChangeLogByUseridAndDepIdAndFunctioncode spend 12 msecs
+[2019-11-21 09:57:55 690][default task-2] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 94] - 127.0.0.1
+[2019-11-21 09:57:55 691][default task-2] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 99] - uid = SuperUser
+[2019-11-21 09:57:55 814][default task-2] INFO  [stdout write 71] - Seqno = 13
+[2019-11-21 09:57:55 825][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-21 09:57:55 826][default task-2] INFO  [stdout write 71] - getSeqno spend 15 msecs.
+[2019-11-21 09:57:55 826][default task-2] INFO  [stdout write 71] - getSeqno rc 14
+[2019-11-21 09:57:55 826][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 83] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() seqno : 14
+[2019-11-21 09:57:55 827][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 86] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() spend 16 msecs
+[2019-11-21 09:57:56 083][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogbyOid_changestat_refid_fcode 671] - [CommonService] findChangeLogbyOid_changestat_refid_fcode spend 2 msecs
+[2019-11-21 09:57:56 207][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.SysPlayerSrv findRole 71] - [SysPlayerSrv] findRole spend 372 msecs
+[2019-11-21 09:57:56 208][default task-2] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 962] - SuperUser驗證成功登入管理系統。
+[2019-11-21 09:57:56 322][default task-2] INFO  [stdout write 71] - Seqno = 58
+[2019-11-21 09:57:56 334][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-21 09:57:56 335][default task-2] INFO  [stdout write 71] - getSeqno spend 15 msecs.
+[2019-11-21 09:57:56 336][default task-2] INFO  [stdout write 71] - getSeqno rc 59
+[2019-11-21 09:57:56 336][default task-2] INFO  [stdout write 71] - getseqno spend 16 msecs.
+[2019-11-21 09:57:56 340][default task-2] INFO  [stdout write 71] - doActionLog spend 19 msecs.
+[2019-11-21 09:57:56 340][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 129] - [ApLoginAuditLogService] insertApLoginAuditLog()
+[2019-11-21 09:57:56 342][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 150] - [ApLoginAuditLogService] insertApLoginAuditLog() spend 1 msecs
+[2019-11-21 09:57:56 343][default task-2] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 1129] - logindoLogin() spend 653 msecs
+[2019-11-21 09:57:56 381][default task-2] DEBUG [com.pro.fxml.web.adm.util.baseComposer getSSID 110] - 
+[2019-11-21 09:58:02 650][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinTrade
+[2019-11-21 09:58:16 630][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinDailyDetailTrade
+[2019-11-21 09:59:18 803][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =TxnDailyReport
+[2019-11-21 10:01:25 735][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinHoliday
+[2019-11-21 10:01:26 784][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =CrossCheck
+[2019-11-21 10:01:26 940][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogByUseridAndDepIdAndFunctioncode 106] - [CommonService] findChangeLogByUseridAndDepIdAndFunctioncode spend 7 msecs
+[2019-11-21 10:01:27 260][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =SendRecvLog
+[2019-11-21 10:01:28 229][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =SendRecvLog
+[2019-11-21 10:01:29 301][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =SendRecvLog
+[2019-11-21 10:01:29 613][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =BranchLog
+[2019-11-21 10:01:31 786][default task-2] INFO  [stdout write 71] - Seqno = 59
+[2019-11-21 10:01:31 798][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-21 10:01:31 799][default task-2] INFO  [stdout write 71] - getSeqno spend 15 msecs.
+[2019-11-21 10:01:31 800][default task-2] INFO  [stdout write 71] - getSeqno rc 60
+[2019-11-21 10:01:31 800][default task-2] INFO  [stdout write 71] - getseqno spend 16 msecs.
+[2019-11-21 10:01:31 803][default task-2] INFO  [stdout write 71] - doActionLog spend 18 msecs.
+[2019-11-21 10:01:32 111][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.DBFacade findChangelog3 405] - [DBFacade] findChangelog3 spend 2 msecs.
+[2019-11-21 10:01:32 112][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogByUseridAndDepIdAndFunctioncode2 896] - [CommonService] findChangeLogByUseridAndDepIdAndFunctioncode2(String, String, String) spend 164 msecs
+[2019-11-21 10:01:35 559][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =UserLogs
+[2019-11-21 10:01:38 329][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =SysPlayer
+[2019-11-21 10:01:39 760][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =UserLogs
+[2019-11-21 10:03:06 095][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinDailyTrade

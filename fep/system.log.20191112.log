@@ -1,0 +1,1084 @@
+[2019-11-12 11:13:47 831] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-12 11:13:51 331] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - isFiscCheckout() fail : null
+java.lang.NullPointerException
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.isFiscCheckout(BaseFxmlApProcessorImpl.java:1687)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.<init>(BaseFxmlApProcessorImpl.java:109)
+	at com.pro.profep.ap.fxmlap.batch.ResendTxn.<init>(ResendTxn.java:77)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.pro.proschedule.Schedule.add(Schedule.java:36)
+	at com.pro.proschedule.SchedulerFactory.loadXML(SchedulerFactory.java:46)
+	at com.pro.util.schedule.impl.SchedulerImpl.runService(SchedulerImpl.java:48)
+	at com.pro.profep.common.impl.BaseThreadImpl.run(BaseThreadImpl.java:86)
+[2019-11-12 11:15:00 009] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - isFiscCheckout() fail : null
+java.lang.NullPointerException
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.isFiscCheckout(BaseFxmlApProcessorImpl.java:1687)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.<init>(BaseFxmlApProcessorImpl.java:109)
+	at com.pro.profep.ap.fxmlap.batch.ResendTxn.<init>(ResendTxn.java:77)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.quartz.simpl.SimpleJobFactory.newJob(SimpleJobFactory.java:55)
+	at org.quartz.core.JobRunShell.initialize(JobRunShell.java:132)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:387)
+[2019-11-12 11:20:00 007] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - isFiscCheckout() fail : null
+java.lang.NullPointerException
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.isFiscCheckout(BaseFxmlApProcessorImpl.java:1687)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.<init>(BaseFxmlApProcessorImpl.java:109)
+	at com.pro.profep.ap.fxmlap.batch.ResendTxn.<init>(ResendTxn.java:77)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.quartz.simpl.SimpleJobFactory.newJob(SimpleJobFactory.java:55)
+	at org.quartz.core.JobRunShell.initialize(JobRunShell.java:132)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:387)
+[2019-11-12 11:22:13 719] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-12 13:18:40 312] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-12 14:48:48 092] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-12 14:52:35 018] ERROR [com.pro.profep.dbservice.impl.DBFacadeImpl error 92] - findAllAccountCategoryRule() fail :   
+--- The error occurred while applying a parameter map.  
+--- Check the account_category_rule.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: relation "account_category_rule" does not exist
+  位置：119
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the account_category_rule.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: relation "account_category_rule" does not exist
+  位置：119
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForList(MappedStatement.java:139)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:567)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:541)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForList(SqlMapSessionImpl.java:118)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.queryForList(SqlMapClientImpl.java:94)
+	at com.provision.proeps.ibatis.dao.sbfin.AccountCategoryRuleDAOImpl.selectByExample(AccountCategoryRuleDAOImpl.java:90)
+	at com.pro.profep.dbservice.impl.DBFacadeImpl.findAllAccountCategoryRule(DBFacadeImpl.java:8818)
+	at com.pro.profep.common.FXMLUtil.getAccountCategory(FXMLUtil.java:659)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:577)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "account_category_rule" does not exist
+  位置：119
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeQuery(SqlExecutor.java:185)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteQuery(MappedStatement.java:221)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:189)
+	... 14 more
+[2019-11-12 14:52:35 019] ERROR [com.pro.profep.common.FXMLUtil error 92] - getAccountCategory() fail.   
+--- The error occurred while applying a parameter map.  
+--- Check the account_category_rule.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: relation "account_category_rule" does not exist
+  位置：119
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the account_category_rule.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: relation "account_category_rule" does not exist
+  位置：119
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForList(MappedStatement.java:139)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:567)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:541)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForList(SqlMapSessionImpl.java:118)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.queryForList(SqlMapClientImpl.java:94)
+	at com.provision.proeps.ibatis.dao.sbfin.AccountCategoryRuleDAOImpl.selectByExample(AccountCategoryRuleDAOImpl.java:90)
+	at com.pro.profep.dbservice.impl.DBFacadeImpl.findAllAccountCategoryRule(DBFacadeImpl.java:8818)
+	at com.pro.profep.common.FXMLUtil.getAccountCategory(FXMLUtil.java:659)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:577)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "account_category_rule" does not exist
+  位置：119
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeQuery(SqlExecutor.java:185)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteQuery(MappedStatement.java:221)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:189)
+	... 14 more
+[2019-11-12 14:52:35 025] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-12 14:52:35 026] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-12 14:52:35 042] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 349] - [20191112|1] validate100100() : 310|往來銀行未參加本項業務 payeeBank : [taiwan]
+[2019-11-12 14:52:35 043] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - updatePmtAddRq_status() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByPrimaryKey-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByPrimaryKey-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForObject(MappedStatement.java:120)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForObject(SqlMapExecutorDelegate.java:518)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForObject(SqlMapExecutorDelegate.java:493)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForObject(SqlMapSessionImpl.java:106)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.queryForObject(SqlMapClientImpl.java:82)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.selectByPrimaryKey(PaysvcrqCtlDAOImpl.java:101)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.updatePmtAddRq_status(IfxDBFacadeImpl.java:793)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.updatePmtAddRq_status(BaseFxmlApProcessorImpl.java:1247)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.update100100_status(P100100Req.java:835)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:316)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeQuery(SqlExecutor.java:185)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteQuery(MappedStatement.java:221)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:189)
+	... 13 more
+[2019-11-12 14:52:35 072] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - findPaysvcrqCtlByRqUID() fail :   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForList(MappedStatement.java:139)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:567)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:541)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForList(SqlMapSessionImpl.java:118)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.queryForList(SqlMapClientImpl.java:94)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.selectByExample(PaysvcrqCtlDAOImpl.java:90)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.findPaysvcrqCtlByRqUID(IfxDBFacadeImpl.java:176)
+	at com.pro.profep.ap.fxmlap.impl.FXMLTranslatorImpl.translate100100to100110(FXMLTranslatorImpl.java:274)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:698)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeQuery(SqlExecutor.java:185)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteQuery(MappedStatement.java:221)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:189)
+	... 13 more
+[2019-11-12 14:52:35 072] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLTranslatorImpl translate100100to100110 352] - translate100100to100110() fail :   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForList(MappedStatement.java:139)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:567)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:541)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForList(SqlMapSessionImpl.java:118)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.queryForList(SqlMapClientImpl.java:94)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.selectByExample(PaysvcrqCtlDAOImpl.java:90)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.findPaysvcrqCtlByRqUID(IfxDBFacadeImpl.java:176)
+	at com.pro.profep.ap.fxmlap.impl.FXMLTranslatorImpl.translate100100to100110(FXMLTranslatorImpl.java:274)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:698)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeQuery(SqlExecutor.java:185)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteQuery(MappedStatement.java:221)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:189)
+	... 13 more
+[2019-11-12 14:52:35 073] ERROR [com.pro.profep.ap.processor.fxmlap.P100100Req error 92] - send100110() fail :   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForList(MappedStatement.java:139)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:567)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:541)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForList(SqlMapSessionImpl.java:118)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.queryForList(SqlMapClientImpl.java:94)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.selectByExample(PaysvcrqCtlDAOImpl.java:90)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.findPaysvcrqCtlByRqUID(IfxDBFacadeImpl.java:176)
+	at com.pro.profep.ap.fxmlap.impl.FXMLTranslatorImpl.translate100100to100110(FXMLTranslatorImpl.java:274)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:698)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeQuery(SqlExecutor.java:185)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteQuery(MappedStatement.java:221)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:189)
+	... 13 more
+[2019-11-12 14:54:57 455] ERROR [tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd error 92] - 
+com.pro.util.ApDefineException: Receive Message Timeout
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.receiveQueue(FxmlEsbConnector.java:131)
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.sendAndRecv(FxmlEsbConnector.java:106)
+	at tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd.pmtAdd(FxmlEsbPmtAdd.java:164)
+	at tw.com.provision.fxml.fxmlsrv.FxmlSrvPortImpl.pmtAdd(FxmlSrvPortImpl.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:181)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:97)
+	at org.apache.cxf.jaxws.AbstractJAXWSMethodInvoker.invoke(AbstractJAXWSMethodInvoker.java:232)
+	at org.apache.cxf.jaxws.JAXWSMethodInvoker.invoke(JAXWSMethodInvoker.java:69)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:75)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$2.run(ServiceInvokerInterceptor.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-12 14:58:52 439] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-12 14:59:09 096] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-12 14:59:09 097] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" of relation "paysvcrq_ctl" does not exist
+  位置：185
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-12 14:59:09 113] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 349] - [20191112|3] validate100100() : 310|往來銀行未參加本項業務 payeeBank : [taiwan]
+[2019-11-12 14:59:09 114] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - updatePmtAddRq_status() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByPrimaryKey-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByPrimaryKey-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForObject(MappedStatement.java:120)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForObject(SqlMapExecutorDelegate.java:518)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForObject(SqlMapExecutorDelegate.java:493)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForObject(SqlMapSessionImpl.java:106)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.queryForObject(SqlMapClientImpl.java:82)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.selectByPrimaryKey(PaysvcrqCtlDAOImpl.java:101)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.updatePmtAddRq_status(IfxDBFacadeImpl.java:793)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.updatePmtAddRq_status(BaseFxmlApProcessorImpl.java:1247)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.update100100_status(P100100Req.java:835)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:316)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeQuery(SqlExecutor.java:185)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteQuery(MappedStatement.java:221)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:189)
+	... 13 more
+[2019-11-12 14:59:09 144] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - findPaysvcrqCtlByRqUID() fail :   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForList(MappedStatement.java:139)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:567)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:541)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForList(SqlMapSessionImpl.java:118)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.queryForList(SqlMapClientImpl.java:94)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.selectByExample(PaysvcrqCtlDAOImpl.java:90)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.findPaysvcrqCtlByRqUID(IfxDBFacadeImpl.java:176)
+	at com.pro.profep.ap.fxmlap.impl.FXMLTranslatorImpl.translate100100to100110(FXMLTranslatorImpl.java:274)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:698)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeQuery(SqlExecutor.java:185)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteQuery(MappedStatement.java:221)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:189)
+	... 13 more
+[2019-11-12 14:59:09 144] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLTranslatorImpl translate100100to100110 352] - translate100100to100110() fail :   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForList(MappedStatement.java:139)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:567)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:541)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForList(SqlMapSessionImpl.java:118)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.queryForList(SqlMapClientImpl.java:94)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.selectByExample(PaysvcrqCtlDAOImpl.java:90)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.findPaysvcrqCtlByRqUID(IfxDBFacadeImpl.java:176)
+	at com.pro.profep.ap.fxmlap.impl.FXMLTranslatorImpl.translate100100to100110(FXMLTranslatorImpl.java:274)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:698)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeQuery(SqlExecutor.java:185)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteQuery(MappedStatement.java:221)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:189)
+	... 13 more
+[2019-11-12 14:59:09 145] ERROR [com.pro.profep.ap.processor.fxmlap.P100100Req error 92] - send100110() fail :   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_selectByExample-InlineParameterMap.  
+--- Check the statement (query failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:201)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryForList(MappedStatement.java:139)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:567)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.queryForList(SqlMapExecutorDelegate.java:541)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.queryForList(SqlMapSessionImpl.java:118)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.queryForList(SqlMapClientImpl.java:94)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.selectByExample(PaysvcrqCtlDAOImpl.java:90)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.findPaysvcrqCtlByRqUID(IfxDBFacadeImpl.java:176)
+	at com.pro.profep.ap.fxmlap.impl.FXMLTranslatorImpl.translate100100to100110(FXMLTranslatorImpl.java:274)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:698)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "payee_account_category" does not exist
+  位置：160
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeQuery(SqlExecutor.java:185)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteQuery(MappedStatement.java:221)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeQueryWithCallback(MappedStatement.java:189)
+	... 13 more
+[2019-11-12 15:01:30 840] ERROR [tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd error 92] - 
+com.pro.util.ApDefineException: Receive Message Timeout
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.receiveQueue(FxmlEsbConnector.java:131)
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.sendAndRecv(FxmlEsbConnector.java:106)
+	at tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd.pmtAdd(FxmlEsbPmtAdd.java:164)
+	at tw.com.provision.fxml.fxmlsrv.FxmlSrvPortImpl.pmtAdd(FxmlSrvPortImpl.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:181)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:97)
+	at org.apache.cxf.jaxws.AbstractJAXWSMethodInvoker.invoke(AbstractJAXWSMethodInvoker.java:232)
+	at org.apache.cxf.jaxws.JAXWSMethodInvoker.invoke(JAXWSMethodInvoker.java:69)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:75)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$2.run(ServiceInvokerInterceptor.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-12 15:03:28 631] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-12 15:03:28 631] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-12 15:03:28 641] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 349] - [20191112|5] validate100100() : 310|往來銀行未參加本項業務 payeeBank : [taiwan]
+[2019-11-12 15:03:28 838] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl loadKeyStore 169] - loadKeyStore() fail : \ap\fep\config_sys\ifxks.jks (系統找不到指定的路徑。)
+java.io.FileNotFoundException: \ap\fep\config_sys\ifxks.jks (系統找不到指定的路徑。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.loadKeyStore(FXMLSecurityImpl.java:162)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:290)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:03:28 838] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:03:28 852] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-12 15:03:28 853] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-12 15:04:40 837] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 349] - [20191112|7] validate100100() : 310|往來銀行未參加本項業務 payeeBank : [048]
+[2019-11-12 15:04:40 853] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:04:48 043] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 349] - [20191112|9] validate100100() : 310|往來銀行未參加本項業務 payeeBank : [048]
+[2019-11-12 15:04:48 058] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:04:49 014] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 349] - [20191112|11] validate100100() : 310|往來銀行未參加本項業務 payeeBank : [048]
+[2019-11-12 15:04:49 025] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:07:23 218] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 349] - [20191112|13] validate100100() : 310|往來銀行未參加本項業務 payeeBank : [048]
+[2019-11-12 15:07:23 233] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:07:31 049] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 349] - [20191112|15] validate100100() : 310|往來銀行未參加本項業務 payeeBank : [123]
+[2019-11-12 15:07:31 063] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:10:01 745] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 449] - [20191112|17] validate100100() : 2080|付款金額超過限額; Final Amount Exceeds Limit settlementAmt : [123456]
+[2019-11-12 15:10:01 758] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:10:19 450] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 449] - [20191112|19] validate100100() : 2080|付款金額超過限額; Final Amount Exceeds Limit settlementAmt : [123456]
+[2019-11-12 15:10:19 462] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:10:30 543] ERROR [com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher error 92] - getMsgId() fail : error: Unexpected element: CDATA
+org.apache.xmlbeans.XmlException: error: Unexpected element: CDATA
+	at org.apache.xmlbeans.impl.store.Locale$SaxLoader.load(Locale.java:3511)
+	at org.apache.xmlbeans.impl.store.Locale.parse(Locale.java:713)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:697)
+	at org.apache.xmlbeans.impl.store.Locale.parseToXmlObject(Locale.java:684)
+	at org.apache.xmlbeans.impl.schema.SchemaTypeLoaderBase.parse(SchemaTypeLoaderBase.java:208)
+	at org.ifxforum.IFXDocument$Factory.parse(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.getMsgId(FxmlApDispatcher.java:155)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:44)
+Caused by: org.xml.sax.SAXParseException; systemId: file:; lineNumber: 1; columnNumber: 1; Unexpected element: CDATA
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.reportFatalError(Piccolo.java:1038)
+	at org.apache.xmlbeans.impl.piccolo.xml.Piccolo.parse(Piccolo.java:723)
+	at org.apache.xmlbeans.impl.store.Locale$SaxLoader.load(Locale.java:3479)
+	... 7 more
+[2019-11-12 15:10:30 544] ERROR [com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher run 104] - Processor bean not found : FXProcessor
+[2019-11-12 15:11:01 979] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.send100110(HOST100100TimeoutReq.java:164)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.processInComingMsg(HOST100100TimeoutReq.java:94)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:16:18 637] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-12 15:16:59 791] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl loadKeyStore 169] - loadKeyStore() fail : \ap\fep\config_sys\ifxks.jks (系統找不到指定的路徑。)
+java.io.FileNotFoundException: \ap\fep\config_sys\ifxks.jks (系統找不到指定的路徑。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.loadKeyStore(FXMLSecurityImpl.java:162)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:290)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.send100110(HOST100100TimeoutReq.java:164)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.processInComingMsg(HOST100100TimeoutReq.java:94)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:16:59 791] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.send100110(HOST100100TimeoutReq.java:164)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.processInComingMsg(HOST100100TimeoutReq.java:94)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 15:18:30 688] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.send100110(HOST100100TimeoutReq.java:164)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.processInComingMsg(HOST100100TimeoutReq.java:94)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 17:44:41 147] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.send100110(HOST100100TimeoutReq.java:164)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.processInComingMsg(HOST100100TimeoutReq.java:94)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 18:09:48 322] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-12 18:10:25 683] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl loadKeyStore 169] - loadKeyStore() fail : \ap\fep\config_sys\ifxks.jks (系統找不到指定的路徑。)
+java.io.FileNotFoundException: \ap\fep\config_sys\ifxks.jks (系統找不到指定的路徑。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.loadKeyStore(FXMLSecurityImpl.java:162)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:290)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.send100110(HOST100100TimeoutReq.java:164)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.processInComingMsg(HOST100100TimeoutReq.java:94)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 18:10:25 684] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 471] - signIFX() fail : Uninitialized keystore
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.getKey(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:293)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.send100110(HOST100100TimeoutReq.java:164)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.processInComingMsg(HOST100100TimeoutReq.java:94)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+[2019-11-12 18:16:58 774] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-12 18:17:56 488] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.send100110(HOST100100TimeoutReq.java:164)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.processInComingMsg(HOST100100TimeoutReq.java:94)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-12 18:17:56 492] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert

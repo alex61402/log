@@ -1,0 +1,200 @@
+[2019-11-04 09:31:31 679][ServerService Thread Pool -- 77] INFO  [org.zkoss.zk.ui.http.WebManager <init> 114] - Starting ZK 7.0.3 CE (build: 2014090212)
+[2019-11-04 09:31:31 693][ServerService Thread Pool -- 77] INFO  [org.zkoss.zk.ui.sys.ConfigParser parseConfigXml 164] - Loading system default
+[2019-11-04 09:31:31 729][ServerService Thread Pool -- 77] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing vfs:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/lib/zul.jar/metainfo/zk/zk.xml
+[2019-11-04 09:31:31 743][ServerService Thread Pool -- 77] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/zk.xml
+[2019-11-04 09:31:34 244][ServerService Thread Pool -- 77] INFO  [org.quartz.simpl.SimpleThreadPool initialize 253] - Job execution threads will use class loader of thread: ServerService Thread Pool -- 77
+[2019-11-04 09:31:34 251][ServerService Thread Pool -- 77] INFO  [org.quartz.simpl.RAMJobStore initialize 143] - RAMJobStore initialized.
+[2019-11-04 09:31:34 252][ServerService Thread Pool -- 77] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 919] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-11-04 09:31:34 252][ServerService Thread Pool -- 77] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 923] - Quartz scheduler version: 1.4.5
+[2019-11-04 09:31:34 983][ServerService Thread Pool -- 77] INFO  [com.pro.proutils.schedule.Schedule add 129] - Add Job Name=[RoleInfo] Group=[DEFAULT] expression=[0 0 7 * * ?]
+[2019-11-04 09:31:34 983][ServerService Thread Pool -- 77] INFO  [org.quartz.core.QuartzScheduler start 370] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-11-04 09:31:36 442][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh_TW
+[2019-11-04 09:31:36 447][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl load 380] - Opening file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/i3-label_zh_TW.properties
+[2019-11-04 09:31:36 453][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh
+[2019-11-04 09:32:32 200][default task-3] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 94] - 127.0.0.1
+[2019-11-04 09:32:32 201][default task-3] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 99] - uid = SuperUser
+[2019-11-04 09:32:33 091][default task-3] INFO  [stdout write 71] - Seqno = 2
+[2019-11-04 09:32:33 098][default task-3] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 09:32:33 098][default task-3] INFO  [stdout write 71] - getSeqno spend 641 msecs.
+[2019-11-04 09:32:33 099][default task-3] INFO  [stdout write 71] - getSeqno rc 3
+[2019-11-04 09:32:33 099][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 83] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() seqno : 3
+[2019-11-04 09:32:33 099][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 86] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() spend 767 msecs
+[2019-11-04 09:32:33 461][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogbyOid_changestat_refid_fcode 671] - [CommonService] findChangeLogbyOid_changestat_refid_fcode spend 37 msecs
+[2019-11-04 09:32:33 586][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.SysPlayerSrv findRole 71] - [SysPlayerSrv] findRole spend 461 msecs
+[2019-11-04 09:32:33 588][default task-3] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 962] - SuperUser驗證成功登入管理系統。
+[2019-11-04 09:32:33 778][default task-3] INFO  [stdout write 71] - Seqno = 4
+[2019-11-04 09:32:33 781][default task-3] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 09:32:33 782][default task-3] INFO  [stdout write 71] - getSeqno spend 7 msecs.
+[2019-11-04 09:32:33 782][default task-3] INFO  [stdout write 71] - getSeqno rc 5
+[2019-11-04 09:32:33 783][default task-3] INFO  [stdout write 71] - getseqno spend 8 msecs.
+[2019-11-04 09:32:33 790][default task-3] INFO  [stdout write 71] - doActionLog spend 37 msecs.
+[2019-11-04 09:32:33 790][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 129] - [ApLoginAuditLogService] insertApLoginAuditLog()
+[2019-11-04 09:32:33 793][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 150] - [ApLoginAuditLogService] insertApLoginAuditLog() spend 3 msecs
+[2019-11-04 09:32:33 793][default task-3] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 1129] - logindoLogin() spend 1593 msecs
+[2019-11-04 09:32:33 856][default task-3] DEBUG [com.pro.fxml.web.adm.util.baseComposer getSSID 110] - 
+[2019-11-04 09:32:36 501][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinTrade
+[2019-11-04 09:32:40 197][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinCommon
+[2019-11-04 09:32:40 531][default task-2] INFO  [stdout write 71] - Seqno = 5
+[2019-11-04 09:32:40 542][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 09:32:40 543][default task-2] INFO  [stdout write 71] - getSeqno spend 16 msecs.
+[2019-11-04 09:32:40 543][default task-2] INFO  [stdout write 71] - getSeqno rc 6
+[2019-11-04 09:32:40 544][default task-2] INFO  [stdout write 71] - getseqno spend 17 msecs.
+[2019-11-04 09:32:40 548][default task-2] INFO  [stdout write 71] - doActionLog spend 21 msecs.
+[2019-11-04 09:32:41 862][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FiscCheckInOut
+[2019-11-04 09:32:44 613][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =BankPara
+[2019-11-04 09:32:44 737][default task-2] INFO  [stdout write 71] - findList spend 13 msecs.
+[2019-11-04 09:32:49 918][default task-2] INFO  [stdout write 71] - Seqno = 6
+[2019-11-04 09:32:49 932][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 09:32:49 932][default task-2] INFO  [stdout write 71] - getSeqno spend 17 msecs.
+[2019-11-04 09:32:49 933][default task-2] INFO  [stdout write 71] - getSeqno rc 7
+[2019-11-04 09:32:49 933][default task-2] INFO  [stdout write 71] - getseqno spend 18 msecs.
+[2019-11-04 09:32:49 936][default task-2] INFO  [stdout write 71] - doActionLog spend 21 msecs.
+[2019-11-04 09:32:50 023][default task-2] INFO  [stdout write 71] - findList spend 3 msecs.
+[2019-11-04 09:32:54 701][default task-2] INFO  [stdout write 71] - Seqno = 7
+[2019-11-04 09:32:54 710][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 09:32:54 711][default task-2] INFO  [stdout write 71] - getSeqno spend 12 msecs.
+[2019-11-04 09:32:54 711][default task-2] INFO  [stdout write 71] - getSeqno rc 8
+[2019-11-04 09:32:54 711][default task-2] INFO  [stdout write 71] - getseqno spend 12 msecs.
+[2019-11-04 09:32:54 713][default task-2] INFO  [stdout write 71] - doActionLog spend 14 msecs.
+[2019-11-04 09:32:54 797][default task-2] INFO  [stdout write 71] - findList spend 2 msecs.
+[2019-11-04 09:33:02 073][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =SysPlayer
+[2019-11-04 09:33:04 180][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =UserLogs
+[2019-11-04 09:33:07 626][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.DBFacade findBranchActionLogMColByIdAndActionTimeRange 171] - [DBFacade] findBranchActionLogMColByIdAndActionTimeRange spend 15 msecs.
+[2019-11-04 09:33:07 644][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.UserLogService findActionLogMColByIdAndActionTimeRange 79] - [UserLogService] findBranchActionLogMColByIdAndActionTime spend 135 msecs
+[2019-11-04 09:33:15 962][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.DBFacade findBranchActionLogMColByIdAndActionTimeRange 171] - [DBFacade] findBranchActionLogMColByIdAndActionTimeRange spend 3 msecs.
+[2019-11-04 09:33:15 964][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.UserLogService findActionLogMColByIdAndActionTimeRange 79] - [UserLogService] findBranchActionLogMColByIdAndActionTime spend 107 msecs
+[2019-11-04 09:33:17 182][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.DBFacade findBranchActionLogMColByIdAndActionTimeRange 171] - [DBFacade] findBranchActionLogMColByIdAndActionTimeRange spend 3 msecs.
+[2019-11-04 09:33:17 184][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.UserLogService findActionLogMColByIdAndActionTimeRange 79] - [UserLogService] findBranchActionLogMColByIdAndActionTime spend 91 msecs
+[2019-11-04 09:33:17 707][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.DBFacade findBranchActionLogMColByIdAndActionTimeRange 171] - [DBFacade] findBranchActionLogMColByIdAndActionTimeRange spend 4 msecs.
+[2019-11-04 09:33:17 709][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.UserLogService findActionLogMColByIdAndActionTimeRange 79] - [UserLogService] findBranchActionLogMColByIdAndActionTime spend 103 msecs
+[2019-11-04 09:33:17 953][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.DBFacade findBranchActionLogMColByIdAndActionTimeRange 171] - [DBFacade] findBranchActionLogMColByIdAndActionTimeRange spend 2 msecs.
+[2019-11-04 09:33:17 955][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.UserLogService findActionLogMColByIdAndActionTimeRange 79] - [UserLogService] findBranchActionLogMColByIdAndActionTime spend 86 msecs
+[2019-11-04 09:33:18 319][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.DBFacade findBranchActionLogMColByIdAndActionTimeRange 171] - [DBFacade] findBranchActionLogMColByIdAndActionTimeRange spend 2 msecs.
+[2019-11-04 09:33:18 321][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.UserLogService findActionLogMColByIdAndActionTimeRange 79] - [UserLogService] findBranchActionLogMColByIdAndActionTime spend 107 msecs
+[2019-11-04 09:33:30 485][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =BranchLog
+[2019-11-04 09:33:32 129][default task-2] INFO  [stdout write 71] - Seqno = 8
+[2019-11-04 09:33:32 131][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 09:33:32 131][default task-2] INFO  [stdout write 71] - getSeqno spend 3 msecs.
+[2019-11-04 09:33:32 132][default task-2] INFO  [stdout write 71] - getSeqno rc 9
+[2019-11-04 09:33:32 132][default task-2] INFO  [stdout write 71] - getseqno spend 4 msecs.
+[2019-11-04 09:33:32 133][default task-2] INFO  [stdout write 71] - doActionLog spend 6 msecs.
+[2019-11-04 09:33:32 322][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.DBFacade findChangelog3 405] - [DBFacade] findChangelog3 spend 2 msecs.
+[2019-11-04 09:33:32 323][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogByUseridAndDepIdAndFunctioncode2 896] - [CommonService] findChangeLogByUseridAndDepIdAndFunctioncode2(String, String, String) spend 100 msecs
+[2019-11-04 09:33:34 910][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =SendRecvLog
+[2019-11-04 09:33:37 232][default task-2] INFO  [stdout write 71] - Seqno = 9
+[2019-11-04 09:33:37 244][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 09:33:37 245][default task-2] INFO  [stdout write 71] - getSeqno spend 15 msecs.
+[2019-11-04 09:33:37 245][default task-2] INFO  [stdout write 71] - getSeqno rc 10
+[2019-11-04 09:33:37 245][default task-2] INFO  [stdout write 71] - getseqno spend 15 msecs.
+[2019-11-04 09:33:37 247][default task-2] INFO  [stdout write 71] - doActionLog spend 17 msecs.
+[2019-11-04 09:33:37 332][default task-2] INFO  [stdout write 71] - createSeqType spend 1 msecs.
+[2019-11-04 09:33:37 332][default task-2] INFO  [stdout write 71] - getSeqno spend 2 msecs.
+[2019-11-04 09:33:37 333][default task-2] INFO  [stdout write 71] - getSeqno rc 1
+[2019-11-04 09:33:37 333][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApAudittrialAuditLog 113] - [ApLoginAuditLogService] getSeqno_ApAudittrialAuditLog() seqno : 1
+[2019-11-04 09:33:37 334][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApAudittrialAuditLog 116] - [ApLoginAuditLogService] getSeqno_ApAudittrialAuditLog() spend 4 msecs
+[2019-11-04 09:33:37 334][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getUserRoleList 196] - [ApLoginAuditLogService] getUserRoleList()
+[2019-11-04 09:33:37 428][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getUserRoleList 222] - [ApLoginAuditLogService] getUserRoleList() spend 94 msecs
+[2019-11-04 09:33:37 528][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApAudittrialAuditLog 163] - [ApLoginAuditLogService] insertApAudittrialAuditLog()
+[2019-11-04 09:33:37 533][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApAudittrialAuditLog 185] - [ApLoginAuditLogService] insertApAudittrialAuditLog() spend 4 msecs
+[2019-11-04 09:33:40 386][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinHoliday
+[2019-11-04 09:33:41 763][default task-2] INFO  [stdout write 71] - Seqno = 10
+[2019-11-04 09:33:41 766][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 09:33:41 766][default task-2] INFO  [stdout write 71] - getSeqno spend 5 msecs.
+[2019-11-04 09:33:41 766][default task-2] INFO  [stdout write 71] - getSeqno rc 11
+[2019-11-04 09:33:41 767][default task-2] INFO  [stdout write 71] - getseqno spend 6 msecs.
+[2019-11-04 09:33:41 769][default task-2] INFO  [stdout write 71] - doActionLog spend 8 msecs.
+[2019-11-04 09:33:46 799][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =CrossCheck
+[2019-11-04 09:33:46 898][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogByUseridAndDepIdAndFunctioncode 106] - [CommonService] findChangeLogByUseridAndDepIdAndFunctioncode spend 2 msecs
+[2019-11-04 09:33:48 031][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinDailyTrade
+[2019-11-04 09:33:48 783][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinMonthlyTrade
+[2019-11-04 09:33:49 403][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinDailyDetailTrade
+[2019-11-04 09:33:50 046][default task-2] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =ExceptionTRecord
+[2019-11-04 15:28:21 302][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.http.WebManager <init> 114] - Starting ZK 7.0.3 CE (build: 2014090212)
+[2019-11-04 15:28:21 314][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.sys.ConfigParser parseConfigXml 164] - Loading system default
+[2019-11-04 15:28:21 348][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing vfs:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/lib/zul.jar/metainfo/zk/zk.xml
+[2019-11-04 15:28:21 358][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/zk.xml
+[2019-11-04 15:28:23 840][ServerService Thread Pool -- 75] INFO  [org.quartz.simpl.SimpleThreadPool initialize 253] - Job execution threads will use class loader of thread: ServerService Thread Pool -- 75
+[2019-11-04 15:28:23 848][ServerService Thread Pool -- 75] INFO  [org.quartz.simpl.RAMJobStore initialize 143] - RAMJobStore initialized.
+[2019-11-04 15:28:23 849][ServerService Thread Pool -- 75] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 919] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-11-04 15:28:23 849][ServerService Thread Pool -- 75] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 923] - Quartz scheduler version: 1.4.5
+[2019-11-04 15:28:24 602][ServerService Thread Pool -- 75] INFO  [com.pro.proutils.schedule.Schedule add 129] - Add Job Name=[RoleInfo] Group=[DEFAULT] expression=[0 0 7 * * ?]
+[2019-11-04 15:28:24 602][ServerService Thread Pool -- 75] INFO  [org.quartz.core.QuartzScheduler start 370] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-11-04 15:28:26 025][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh_TW
+[2019-11-04 15:28:26 029][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl load 380] - Opening file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/i3-label_zh_TW.properties
+[2019-11-04 15:28:26 035][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh
+[2019-11-04 15:29:33 237][default task-2] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 94] - 127.0.0.1
+[2019-11-04 15:29:33 238][default task-2] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 99] - uid = SuperUser
+[2019-11-04 15:29:34 119][default task-2] INFO  [stdout write 71] - Seqno = 3
+[2019-11-04 15:29:34 123][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 15:29:34 123][default task-2] INFO  [stdout write 71] - getSeqno spend 587 msecs.
+[2019-11-04 15:29:34 124][default task-2] INFO  [stdout write 71] - getSeqno rc 4
+[2019-11-04 15:29:34 124][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 83] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() seqno : 4
+[2019-11-04 15:29:34 124][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 86] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() spend 738 msecs
+[2019-11-04 15:29:34 530][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogbyOid_changestat_refid_fcode 671] - [CommonService] findChangeLogbyOid_changestat_refid_fcode spend 38 msecs
+[2019-11-04 15:29:34 660][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.SysPlayerSrv findRole 71] - [SysPlayerSrv] findRole spend 516 msecs
+[2019-11-04 15:29:34 662][default task-2] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 962] - SuperUser驗證成功登入管理系統。
+[2019-11-04 15:29:34 850][default task-2] INFO  [stdout write 71] - Seqno = 11
+[2019-11-04 15:29:34 854][default task-2] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 15:29:34 854][default task-2] INFO  [stdout write 71] - getSeqno spend 6 msecs.
+[2019-11-04 15:29:34 855][default task-2] INFO  [stdout write 71] - getSeqno rc 12
+[2019-11-04 15:29:34 855][default task-2] INFO  [stdout write 71] - getseqno spend 7 msecs.
+[2019-11-04 15:29:34 862][default task-2] INFO  [stdout write 71] - doActionLog spend 39 msecs.
+[2019-11-04 15:29:34 863][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 129] - [ApLoginAuditLogService] insertApLoginAuditLog()
+[2019-11-04 15:29:34 866][default task-2] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 150] - [ApLoginAuditLogService] insertApLoginAuditLog() spend 3 msecs
+[2019-11-04 15:29:34 866][default task-2] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 1129] - logindoLogin() spend 1629 msecs
+[2019-11-04 15:29:34 926][default task-2] DEBUG [com.pro.fxml.web.adm.util.baseComposer getSSID 110] - 
+[2019-11-04 16:27:45 719][default task-3] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 94] - 127.0.0.1
+[2019-11-04 16:27:45 720][default task-3] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 99] - uid = SuperUser
+[2019-11-04 16:27:45 831][default task-3] INFO  [stdout write 71] - Seqno = 4
+[2019-11-04 16:27:45 843][default task-3] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 16:27:45 844][default task-3] INFO  [stdout write 71] - getSeqno spend 18 msecs.
+[2019-11-04 16:27:45 844][default task-3] INFO  [stdout write 71] - getSeqno rc 5
+[2019-11-04 16:27:45 845][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 83] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() seqno : 5
+[2019-11-04 16:27:45 845][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 86] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() spend 20 msecs
+[2019-11-04 16:27:46 101][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogbyOid_changestat_refid_fcode 671] - [CommonService] findChangeLogbyOid_changestat_refid_fcode spend 5 msecs
+[2019-11-04 16:27:46 204][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.SysPlayerSrv findRole 71] - [SysPlayerSrv] findRole spend 347 msecs
+[2019-11-04 16:27:46 205][default task-3] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 962] - SuperUser驗證成功登入管理系統。
+[2019-11-04 16:27:46 320][default task-3] INFO  [stdout write 71] - Seqno = 12
+[2019-11-04 16:27:46 333][default task-3] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 16:27:46 333][default task-3] INFO  [stdout write 71] - getSeqno spend 15 msecs.
+[2019-11-04 16:27:46 333][default task-3] INFO  [stdout write 71] - getSeqno rc 13
+[2019-11-04 16:27:46 334][default task-3] INFO  [stdout write 71] - getseqno spend 16 msecs.
+[2019-11-04 16:27:46 336][default task-3] INFO  [stdout write 71] - doActionLog spend 19 msecs.
+[2019-11-04 16:27:46 337][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 129] - [ApLoginAuditLogService] insertApLoginAuditLog()
+[2019-11-04 16:27:46 338][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 150] - [ApLoginAuditLogService] insertApLoginAuditLog() spend 1 msecs
+[2019-11-04 16:27:46 339][default task-3] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 1129] - logindoLogin() spend 620 msecs
+[2019-11-04 16:27:46 387][default task-3] DEBUG [com.pro.fxml.web.adm.util.baseComposer getSSID 110] - 
+[2019-11-04 16:27:48 017][default task-3] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinTrade
+[2019-11-04 16:44:58 285][default task-3] INFO  [stdout write 71] - Seqno = 13
+[2019-11-04 16:44:58 298][default task-3] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 16:44:58 298][default task-3] INFO  [stdout write 71] - getSeqno spend 15 msecs.
+[2019-11-04 16:44:58 298][default task-3] INFO  [stdout write 71] - getSeqno rc 14
+[2019-11-04 16:44:58 298][default task-3] INFO  [stdout write 71] - getseqno spend 15 msecs.
+[2019-11-04 16:44:58 301][default task-3] INFO  [stdout write 71] - doActionLog spend 17 msecs.
+[2019-11-04 16:44:58 402][default task-3] INFO  [stdout write 71] - Seqno = 1
+[2019-11-04 16:44:58 404][default task-3] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 16:44:58 405][default task-3] INFO  [stdout write 71] - getSeqno spend 5 msecs.
+[2019-11-04 16:44:58 405][default task-3] INFO  [stdout write 71] - getSeqno rc 2
+[2019-11-04 16:44:58 406][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApAudittrialAuditLog 113] - [ApLoginAuditLogService] getSeqno_ApAudittrialAuditLog() seqno : 2
+[2019-11-04 16:44:58 406][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApAudittrialAuditLog 116] - [ApLoginAuditLogService] getSeqno_ApAudittrialAuditLog() spend 6 msecs
+[2019-11-04 16:44:58 406][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getUserRoleList 196] - [ApLoginAuditLogService] getUserRoleList()
+[2019-11-04 16:44:58 524][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getUserRoleList 222] - [ApLoginAuditLogService] getUserRoleList() spend 117 msecs
+[2019-11-04 16:44:59 408][default task-3] DEBUG [com.provision.profxml.ibatis.service.ifx_db.PmtaddrqCtlService selectbyUserEnter 209] - [PmtaddrqCtlService] selectbyUserEnter() 查詢pmtaddrq_ctl交易筆數 : 0 spend : 508 msecs.
+[2019-11-04 16:44:59 408][default task-3] DEBUG [com.provision.profxml.ibatis.service.ifx_db.PmtaddrqCtlService selectbyUserEnter 832] - [PmtaddrqCtlService] selectbyUserEnter() PmtaddrqCtlService final spend 704 msecs.
+[2019-11-04 16:44:59 424][default task-3] DEBUG [com.pro.fxml.web.FinTrade400Composer goselect 267] - fin trade400  spend 720 msecs.
+[2019-11-04 16:44:59 424][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApAudittrialAuditLog 163] - [ApLoginAuditLogService] insertApAudittrialAuditLog()
+[2019-11-04 16:44:59 427][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApAudittrialAuditLog 185] - [ApLoginAuditLogService] insertApAudittrialAuditLog() spend 3 msecs
+[2019-11-04 16:45:08 483][default task-3] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =BranchLog
+[2019-11-04 16:45:10 099][default task-3] INFO  [stdout write 71] - Seqno = 14
+[2019-11-04 16:45:10 109][default task-3] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-04 16:45:10 110][default task-3] INFO  [stdout write 71] - getSeqno spend 13 msecs.
+[2019-11-04 16:45:10 110][default task-3] INFO  [stdout write 71] - getSeqno rc 15
+[2019-11-04 16:45:10 110][default task-3] INFO  [stdout write 71] - getseqno spend 13 msecs.
+[2019-11-04 16:45:10 113][default task-3] INFO  [stdout write 71] - doActionLog spend 17 msecs.
+[2019-11-04 16:45:10 293][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.DBFacade findChangelog3 405] - [DBFacade] findChangelog3 spend 3 msecs.
+[2019-11-04 16:45:10 293][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogByUseridAndDepIdAndFunctioncode2 896] - [CommonService] findChangeLogByUseridAndDepIdAndFunctioncode2(String, String, String) spend 90 msecs
+[2019-11-04 16:47:31 234][default task-3] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =ExceptionTradeRSend
+[2019-11-04 16:47:33 610][default task-3] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =CrossCheck
+[2019-11-04 16:47:33 718][default task-3] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogByUseridAndDepIdAndFunctioncode 106] - [CommonService] findChangeLogByUseridAndDepIdAndFunctioncode spend 2 msecs
+[2019-11-04 16:47:49 919][default task-3] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FinHoliday
+[2019-11-04 16:47:54 063][default task-3] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FiscCheckInOut

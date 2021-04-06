@@ -1,0 +1,17 @@
+[2019-11-20 08:59:19 432] INFO  [FxmlEsbConnector Connect 49] - Start FxmlEsbConnector Connector Service receive from [fxmlPlatformConnectorQ]
+[2019-11-20 08:59:20 655] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv?wsdl
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3], accept-encoding=[gzip, deflate, br], Accept-Language=[zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7], Cache-Control=[max-age=0], connection=[keep-alive], Content-Type=[null], Host=[127.0.0.1], Sec-Fetch-Mode=[navigate], Sec-Fetch-Site=[none], Sec-Fetch-User=[?1], Upgrade-Insecure-Requests=[1], User-Agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36]}
+--------------------------------------
+[2019-11-20 08:59:29 468] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv?wsdl
+Http-Method: GET
+Content-Type: 
+Headers: {connection=[keep-alive], Content-Type=[null], Host=[127.0.0.1], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+--------------------------------------

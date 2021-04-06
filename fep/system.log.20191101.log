@@ -1,0 +1,54 @@
+[2019-11-01 17:16:19 275] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-01 17:16:21 814] ERROR [org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine addServant 419] - Could not start Jetty server on port 6,080: Cannot assign requested address: bind
+[2019-11-01 17:16:41 145] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:16:41 147] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:17:03 174] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:17:03 175] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:17:10 368] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-01 17:17:12 796] ERROR [org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine addServant 419] - Could not start Jetty server on port 6,080: Cannot assign requested address: bind
+[2019-11-01 17:17:32 229] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:17:32 236] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:17:54 257] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:17:54 258] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:18:16 282] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:18:16 286] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:18:38 332] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:18:38 332] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:19:00 353] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:19:00 355] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:19:22 380] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:19:22 388] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:19:44 414] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:19:44 417] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:20:06 439] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:20:06 441] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:20:28 468] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:20:28 468] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:20:50 503] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:20:50 505] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:21:12 531] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:21:12 535] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:21:34 560] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:21:34 565] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:21:56 586] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:21:56 597] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:22:18 610] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:22:18 626] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:22:40 638] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:22:40 654] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:23:02 673] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:23:02 691] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:23:24 700] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:23:24 723] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:23:46 729] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:23:46 760] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:24:08 756] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:24:08 782] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:24:30 789] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:24:30 805] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:24:52 821] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:24:52 830] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:25:14 845] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:25:14 863] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused
+[2019-11-01 17:25:36 876] ERROR [com.pro.profep.route.connector.FepSender run 53] - Connection refused
+[2019-11-01 17:25:36 890] ERROR [com.pro.profep.route.connector.FepReceiver run 63] - Connection refused

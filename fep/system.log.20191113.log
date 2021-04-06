@@ -1,0 +1,2136 @@
+[2019-11-13 09:03:43 391] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-13 10:04:00 011] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-13 10:04:00 012] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-13 10:04:00 028] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 255] - [20191113|1] validate100100() : 2100|日期錯誤; Invalid Datetime –Single date or Low of range clientDate : [20191113] bankDate :[20191112]
+[2019-11-13 10:04:21 605] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 10:04:21 606] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 10:04:21 624] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-13 10:04:21 625] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-13 10:06:25 864] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-13 10:06:25 865] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-13 10:06:25 870] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 255] - [20191113|3] validate100100() : 2100|日期錯誤; Invalid Datetime –Single date or Low of range clientDate : [20191113] bankDate :[20191112]
+[2019-11-13 10:06:46 916] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 10:06:46 916] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 10:06:46 932] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-13 10:06:46 933] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-13 10:08:33 902] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-13 10:08:33 902] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-13 10:08:33 909] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 255] - [20191113|5] validate100100() : 2100|日期錯誤; Invalid Datetime –Single date or Low of range clientDate : [20191113] bankDate :[20191112]
+[2019-11-13 10:08:54 960] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 10:08:54 962] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 10:08:54 979] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-13 10:08:54 979] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-13 10:23:48 749] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-13 10:23:48 749] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-13 10:23:48 752] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 255] - [20191113|7] validate100100() : 2100|日期錯誤; Invalid Datetime –Single date or Low of range clientDate : [20191113] bankDate :[20191112]
+[2019-11-13 10:24:09 788] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 10:24:09 789] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 10:24:09 802] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-13 10:24:09 803] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-13 10:26:05 211] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-13 10:26:05 212] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRq() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/paysvcrq_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the paysvcrq_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PaysvcrqCtlDAOImpl.insert(PaysvcrqCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrq(IfxDBFacadeImpl.java:308)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRq(BaseFxmlApProcessorImpl.java:744)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100100(P100100Req.java:628)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:185)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 11 more
+[2019-11-13 10:26:05 217] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 349] - [20191113|9] validate100100() : 310|往來銀行未參加本項業務 payeeBank : [TAIWAN]
+[2019-11-13 10:26:26 259] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 10:26:26 260] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 10:26:26 278] ERROR [com.pro.profep.dbservice.impl.IfxDBFacadeImpl error 92] - storePmtaddrs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-13 10:26:26 280] ERROR [com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl error 92] - storePmtAddRs() fail :   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/provision/proeps/ibatis/maps/ifx/pmtaddrs_ctl_SqlMap.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the pmtaddrs_ctl.ibatorgenerated_insert-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:107)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.insert(SqlMapExecutorDelegate.java:393)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.insert(SqlMapSessionImpl.java:82)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.insert(SqlMapClientImpl.java:58)
+	at com.provision.proeps.ibatis.dao.ifx.PmtaddrsCtlDAOImpl.insert(PmtaddrsCtlDAOImpl.java:70)
+	at com.pro.profep.dbservice.impl.IfxDBFacadeImpl.storePmtaddrs(IfxDBFacadeImpl.java:390)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.storePmtAddRs(BaseFxmlApProcessorImpl.java:1102)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.store100110(P100100Req.java:672)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:730)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: org.postgresql.util.PSQLException: ERROR: value too long for type character varying(3)
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:386)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:379)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:80)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.sqlExecuteUpdate(MappedStatement.java:216)
+	at com.ibatis.sqlmap.engine.mapping.statement.MappedStatement.executeUpdate(MappedStatement.java:94)
+	... 12 more
+[2019-11-13 10:28:01 443] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100300(P100100Req.java:800)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:352)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 10:28:01 444] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 10:28:01 478] ERROR [FxmlFiscConnector error 92] - [FxmlFiscConnector][10014]
+java.lang.NullPointerException
+	at com.pro.profep.connector.common.impl.ConnectorType1Out.onMessage(ConnectorType1Out.java:216)
+	at org.apache.activemq.ActiveMQMessageConsumer.dispatch(ActiveMQMessageConsumer.java:1088)
+	at org.apache.activemq.ActiveMQSessionExecutor.dispatch(ActiveMQSessionExecutor.java:127)
+	at org.apache.activemq.ActiveMQSessionExecutor.iterate(ActiveMQSessionExecutor.java:197)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:122)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:43)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-13 10:36:08 015] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100300(P100100Req.java:800)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:352)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 10:36:08 015] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 10:36:08 038] ERROR [FxmlFiscConnector error 92] - [FxmlFiscConnector][10014]
+java.lang.NullPointerException
+	at com.pro.profep.connector.common.impl.ConnectorType1Out.onMessage(ConnectorType1Out.java:216)
+	at org.apache.activemq.ActiveMQMessageConsumer.dispatch(ActiveMQMessageConsumer.java:1088)
+	at org.apache.activemq.ActiveMQSessionExecutor.dispatch(ActiveMQSessionExecutor.java:127)
+	at org.apache.activemq.ActiveMQSessionExecutor.iterate(ActiveMQSessionExecutor.java:197)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:122)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:43)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-13 10:42:28 764] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.send100110(HOST100100TimeoutReq.java:164)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.processInComingMsg(HOST100100TimeoutReq.java:94)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 10:42:28 765] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 11:04:21 678] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.send100110(HOST100100TimeoutReq.java:164)
+	at com.pro.profep.ap.processor.fxmlap.HOST100100TimeoutReq.processInComingMsg(HOST100100TimeoutReq.java:94)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 11:04:21 679] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 13:47:45 097] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-13 13:51:17 812] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLValidaterImpl validate100100 275] - [20191113|23] validate100100() : 1020|必要欄位不齊全; Required Element Not Includes payerAccNo : []
+[2019-11-13 13:51:39 356] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:325)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 13:51:39 361] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 13:52:34 723] ERROR [com.pro.profep.agent.t24.impl.MyT24AgentImpl2 error 92] - [queueKey=,msgSender=Ap,msgSenderQueue=fxmlPlatformAgentQ,msgReceiver=Agent,msgReceiverQueue=fxmlT24AgentQ,timesTamp=0,referenceData=null,flowStep=null,flowStepList=,],[messageStatus=VALIDATE,IFXDocument=<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SignonRq Id="SignonRq">
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T13:52:34+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <SuppressEcho>1</SuppressEcho>
+  </SignonRq>
+  <PaySvcRq Id="PaySvcRq">
+    <RqUID>63521751-016e-1000-5002-c0a800430000</RqUID>
+    <PmtAddRq>
+      <tw.org.ba:MsgId>100100</tw.org.ba:MsgId>
+      <RqUID>63521751-016e-1000-5003-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>F128986563</CustPermId>
+      </CustId>
+      <PmtInfo>
+        <LegalName>ALEX</LegalName>
+        <RemitInfo>
+          <SettlementInfo>
+            <SettlementMethod>FISC</SettlementMethod>
+            <SettlementId/>
+            <PmtInstruction>
+              <PmtFormat>FXML</PmtFormat>
+              <FeeChargeAlloc>
+                <ChargeRegulation>Payer</ChargeRegulation>
+                <Fee>
+                  <FeeType>Transaction</FeeType>
+                  <CurAmt>
+                    <Amt>0</Amt>
+                  </CurAmt>
+                </Fee>
+              </FeeChargeAlloc>
+            </PmtInstruction>
+          </SettlementInfo>
+          <CustPayeeId>F128986563</CustPayeeId>
+          <CustPayeeInfo>
+            <Name>ALEX</Name>
+            <XferPayee>
+              <DepAcctIdTo>
+                <AcctId>123456</AcctId>
+                <AcctType>SDA</AcctType>
+                <BankInfo>
+                  <BankId>123</BankId>
+                  <BranchId>0000</BranchId>
+                </BankInfo>
+              </DepAcctIdTo>
+            </XferPayee>
+          </CustPayeeInfo>
+          <CurAmt>
+            <Amt>1234</Amt>
+          </CurAmt>
+          <RemitDetail>
+            <BillRefInfo>N</BillRefInfo>
+            <Memo>789</Memo>
+          </RemitDetail>
+          <PmtRemitRefId>12345612345612345612345612345612</PmtRemitRefId>
+          <RefInfo>
+            <RefType>01</RefType>
+            <RefId>12345612345612345612345612345612</RefId>
+          </RefInfo>
+        </RemitInfo>
+        <DepAcctIdFrom>
+          <AcctId>A456</AcctId>
+          <AcctType>SDA</AcctType>
+          <BankInfo>
+            <BankId>048</BankId>
+            <BranchId>0011</BranchId>
+          </BankInfo>
+        </DepAcctIdFrom>
+        <PrcDt>2019-11-13</PrcDt>
+        <tw.org.ba:SettlementAmt>
+          <Amt>1234</Amt>
+        </tw.org.ba:SettlementAmt>
+      </PmtInfo>
+    </PmtAddRq>
+  </PaySvcRq>
+</IFX>,msgId=100100,IS_FIRST=N,txnDate=20191113,txnSeq=25,txnDetnum=1,orgMsgId=100100,txnStatusCode=0,txnStatusDesc=交易完成; Success,bank_chargeamt=20,fisc_chargeamt=10,settlementAmt=1234,realPayamt=1264,T24SystemHeader=FUNDS.TRANSFER,OBT.ACFX.INP/I/PROCESS,IFUFXMLB0001/123456,,DEBIT.ACCT.NO:1:1=A456,DEBIT.CURRENCY:1:1=TWD,DEBIT.AMOUNT:1:=1234,L.DR.NARR:1:1=789,COMMISSION.CODE:1:1=D,COMMISSION.TYPE:1:1=FXML,COMMISSION.AMT:1:1=TWD15,ORDERING.CUST:1:1=IBT,CREDIT.VALUE.DATE:1:1=20191113,L.ORG.CHRGAMT:1:1=TWD15,L.FISC.DATE:1:1=20191114,L.PMT.TYPE:1:1=100300,L.CHNN.CODE:1:1=IB,L.TX.SEQNO:1:1=2019111304800110000009,AMOUNT.DEBITED:1:1=0,FepTxSrcId=100100,FepTxId=30XBX8N,]
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2.processInternalMsg(MyT24AgentImpl2.java:735)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2$doTransaction.run(MyT24AgentImpl2.java:112)
+[2019-11-13 13:52:34 725] ERROR [com.pro.profep.agent.t24.impl.MyT24AgentImpl2 error 92] - Dispathch msg to function Err!!!
+com.pro.util.ApDefineException: fepMsg compose error[java.lang.NumberFormatException: null]
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2.processInternalMsg(MyT24AgentImpl2.java:770)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2$doTransaction.run(MyT24AgentImpl2.java:112)
+[2019-11-13 13:54:57 378] ERROR [tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd error 92] - 
+com.pro.util.ApDefineException: Receive Message Timeout
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.receiveQueue(FxmlEsbConnector.java:131)
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.sendAndRecv(FxmlEsbConnector.java:106)
+	at tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd.pmtAdd(FxmlEsbPmtAdd.java:164)
+	at tw.com.provision.fxml.fxmlsrv.FxmlSrvPortImpl.pmtAdd(FxmlSrvPortImpl.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:181)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:97)
+	at org.apache.cxf.jaxws.AbstractJAXWSMethodInvoker.invoke(AbstractJAXWSMethodInvoker.java:232)
+	at org.apache.cxf.jaxws.JAXWSMethodInvoker.invoke(JAXWSMethodInvoker.java:69)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:75)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$2.run(ServiceInvokerInterceptor.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-13 14:05:09 746] ERROR [com.pro.profep.agent.t24.impl.MyT24AgentImpl2 error 92] - [queueKey=,msgSender=Ap,msgSenderQueue=fxmlPlatformAgentQ,msgReceiver=Agent,msgReceiverQueue=fxmlT24AgentQ,timesTamp=0,referenceData=null,flowStep=null,flowStepList=,],[messageStatus=VALIDATE,IFXDocument=<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SignonRq Id="SignonRq">
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T14:05:09+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <SuppressEcho>1</SuppressEcho>
+  </SignonRq>
+  <PaySvcRq Id="PaySvcRq">
+    <RqUID>635d9cba-016e-1000-5004-c0a800430000</RqUID>
+    <PmtAddRq>
+      <tw.org.ba:MsgId>100100</tw.org.ba:MsgId>
+      <RqUID>635d9cbb-016e-1000-5005-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>F128986563</CustPermId>
+      </CustId>
+      <PmtInfo>
+        <LegalName>ALEX</LegalName>
+        <RemitInfo>
+          <SettlementInfo>
+            <SettlementMethod>FISC</SettlementMethod>
+            <SettlementId/>
+            <PmtInstruction>
+              <PmtFormat>FXML</PmtFormat>
+              <FeeChargeAlloc>
+                <ChargeRegulation>Payer</ChargeRegulation>
+                <Fee>
+                  <FeeType>Transaction</FeeType>
+                  <CurAmt>
+                    <Amt>0</Amt>
+                  </CurAmt>
+                </Fee>
+              </FeeChargeAlloc>
+            </PmtInstruction>
+          </SettlementInfo>
+          <CustPayeeId>F128986563</CustPayeeId>
+          <CustPayeeInfo>
+            <Name>ALEX</Name>
+            <XferPayee>
+              <DepAcctIdTo>
+                <AcctId>123456</AcctId>
+                <AcctType>SDA</AcctType>
+                <BankInfo>
+                  <BankId>123</BankId>
+                  <BranchId>0000</BranchId>
+                </BankInfo>
+              </DepAcctIdTo>
+            </XferPayee>
+          </CustPayeeInfo>
+          <CurAmt>
+            <Amt>1234</Amt>
+          </CurAmt>
+          <RemitDetail>
+            <BillRefInfo>N</BillRefInfo>
+            <Memo>789</Memo>
+          </RemitDetail>
+          <PmtRemitRefId>1234</PmtRemitRefId>
+          <RefInfo>
+            <RefType>01</RefType>
+            <RefId>1234</RefId>
+          </RefInfo>
+        </RemitInfo>
+        <DepAcctIdFrom>
+          <AcctId>A456</AcctId>
+          <AcctType>SDA</AcctType>
+          <BankInfo>
+            <BankId>048</BankId>
+            <BranchId>0011</BranchId>
+          </BankInfo>
+        </DepAcctIdFrom>
+        <PrcDt>2019-11-13</PrcDt>
+        <tw.org.ba:SettlementAmt>
+          <Amt>1234</Amt>
+        </tw.org.ba:SettlementAmt>
+      </PmtInfo>
+    </PmtAddRq>
+  </PaySvcRq>
+</IFX>,msgId=100100,IS_FIRST=N,txnDate=20191113,txnSeq=26,txnDetnum=1,orgMsgId=100100,txnStatusCode=0,txnStatusDesc=交易完成; Success,bank_chargeamt=20,fisc_chargeamt=10,settlementAmt=1234,realPayamt=1264,T24SystemHeader=FUNDS.TRANSFER,OBT.ACFX.INP/I/PROCESS,IFUFXMLB0001/123456,,DEBIT.ACCT.NO:1:1=A456,DEBIT.CURRENCY:1:1=TWD,DEBIT.AMOUNT:1:=1234,L.DR.NARR:1:1=789,COMMISSION.CODE:1:1=D,COMMISSION.TYPE:1:1=FXML,COMMISSION.AMT:1:1=TWD15,ORDERING.CUST:1:1=IBT,CREDIT.VALUE.DATE:1:1=20191113,L.ORG.CHRGAMT:1:1=TWD15,L.FISC.DATE:1:1=20191114,L.PMT.TYPE:1:1=100300,L.CHNN.CODE:1:1=IB,L.TX.SEQNO:1:1=2019111304800110000010,AMOUNT.DEBITED:1:1=0,FepTxSrcId=100100,FepTxId=30XBX8N,]
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2.processInternalMsg(MyT24AgentImpl2.java:735)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2$doTransaction.run(MyT24AgentImpl2.java:112)
+[2019-11-13 14:05:09 747] ERROR [com.pro.profep.agent.t24.impl.MyT24AgentImpl2 error 92] - Dispathch msg to function Err!!!
+com.pro.util.ApDefineException: fepMsg compose error[java.lang.NumberFormatException: null]
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2.processInternalMsg(MyT24AgentImpl2.java:770)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2$doTransaction.run(MyT24AgentImpl2.java:112)
+[2019-11-13 14:07:32 551] ERROR [tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd error 92] - 
+com.pro.util.ApDefineException: Receive Message Timeout
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.receiveQueue(FxmlEsbConnector.java:131)
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.sendAndRecv(FxmlEsbConnector.java:106)
+	at tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd.pmtAdd(FxmlEsbPmtAdd.java:164)
+	at tw.com.provision.fxml.fxmlsrv.FxmlSrvPortImpl.pmtAdd(FxmlSrvPortImpl.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:181)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:97)
+	at org.apache.cxf.jaxws.AbstractJAXWSMethodInvoker.invoke(AbstractJAXWSMethodInvoker.java:232)
+	at org.apache.cxf.jaxws.JAXWSMethodInvoker.invoke(JAXWSMethodInvoker.java:69)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:75)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$2.run(ServiceInvokerInterceptor.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-13 14:12:03 010] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-13 14:12:28 950] ERROR [com.pro.profep.agent.t24.impl.MyT24AgentImpl2 error 92] - [queueKey=,msgSender=Ap,msgSenderQueue=fxmlPlatformAgentQ,msgReceiver=Agent,msgReceiverQueue=fxmlT24AgentQ,timesTamp=0,referenceData=null,flowStep=null,flowStepList=,],[messageStatus=VALIDATE,IFXDocument=<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SignonRq Id="SignonRq">
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T14:12:28+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <SuppressEcho>1</SuppressEcho>
+  </SignonRq>
+  <PaySvcRq Id="PaySvcRq">
+    <RqUID>63644d75-016e-1000-5000-c0a800430000</RqUID>
+    <PmtAddRq>
+      <tw.org.ba:MsgId>100100</tw.org.ba:MsgId>
+      <RqUID>63644d7c-016e-1000-5001-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>F128986563</CustPermId>
+      </CustId>
+      <PmtInfo>
+        <LegalName>ALEX</LegalName>
+        <RemitInfo>
+          <SettlementInfo>
+            <SettlementMethod>FISC</SettlementMethod>
+            <SettlementId/>
+            <PmtInstruction>
+              <PmtFormat>FXML</PmtFormat>
+              <FeeChargeAlloc>
+                <ChargeRegulation>Payer</ChargeRegulation>
+                <Fee>
+                  <FeeType>Transaction</FeeType>
+                  <CurAmt>
+                    <Amt>0</Amt>
+                  </CurAmt>
+                </Fee>
+              </FeeChargeAlloc>
+            </PmtInstruction>
+          </SettlementInfo>
+          <CustPayeeId>F128986563</CustPayeeId>
+          <CustPayeeInfo>
+            <Name>ALEX</Name>
+            <XferPayee>
+              <DepAcctIdTo>
+                <AcctId>123456</AcctId>
+                <AcctType>SDA</AcctType>
+                <BankInfo>
+                  <BankId>123</BankId>
+                  <BranchId>0000</BranchId>
+                </BankInfo>
+              </DepAcctIdTo>
+            </XferPayee>
+          </CustPayeeInfo>
+          <CurAmt>
+            <Amt>1234</Amt>
+          </CurAmt>
+          <RemitDetail>
+            <BillRefInfo>N</BillRefInfo>
+            <Memo>789</Memo>
+          </RemitDetail>
+          <PmtRemitRefId>1234</PmtRemitRefId>
+          <RefInfo>
+            <RefType>01</RefType>
+            <RefId>1234</RefId>
+          </RefInfo>
+        </RemitInfo>
+        <DepAcctIdFrom>
+          <AcctId>A456</AcctId>
+          <AcctType>SDA</AcctType>
+          <BankInfo>
+            <BankId>048</BankId>
+            <BranchId>0011</BranchId>
+          </BankInfo>
+        </DepAcctIdFrom>
+        <PrcDt>2019-11-13</PrcDt>
+        <tw.org.ba:SettlementAmt>
+          <Amt>1234</Amt>
+        </tw.org.ba:SettlementAmt>
+      </PmtInfo>
+    </PmtAddRq>
+  </PaySvcRq>
+</IFX>,msgId=100100,IS_FIRST=N,txnDate=20191113,txnSeq=27,txnDetnum=1,orgMsgId=100100,txnStatusCode=0,txnStatusDesc=交易完成; Success,bank_chargeamt=20,fisc_chargeamt=10,settlementAmt=1234,realPayamt=1264,T24SystemHeader=FUNDS.TRANSFER,OBT.ACFX.INP/I/PROCESS,IFUFXMLB0001/123456,,DEBIT.ACCT.NO:1:1=A456,DEBIT.CURRENCY:1:1=TWD,DEBIT.AMOUNT:1:=1234,L.DR.NARR:1:1=789,COMMISSION.CODE:1:1=D,COMMISSION.TYPE:1:1=FXML,COMMISSION.AMT:1:1=TWD15,ORDERING.CUST:1:1=IBT,CREDIT.VALUE.DATE:1:1=20191113,L.ORG.CHRGAMT:1:1=TWD15,L.FISC.DATE:1:1=20191114,L.PMT.TYPE:1:1=100300,L.CHNN.CODE:1:1=IB,L.TX.SEQNO:1:1=2019111304800110000011,AMOUNT.DEBITED:1:1=0,FepTxSrcId=100100,FepTxId=30XBX8N,]
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2.processInternalMsg(MyT24AgentImpl2.java:735)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2$doTransaction.run(MyT24AgentImpl2.java:112)
+[2019-11-13 14:12:28 952] ERROR [com.pro.profep.agent.t24.impl.MyT24AgentImpl2 error 92] - Dispathch msg to function Err!!!
+com.pro.util.ApDefineException: fepMsg compose error[java.lang.NumberFormatException: null]
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2.processInternalMsg(MyT24AgentImpl2.java:770)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2$doTransaction.run(MyT24AgentImpl2.java:112)
+[2019-11-13 14:14:50 970] ERROR [tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd error 92] - 
+com.pro.util.ApDefineException: Receive Message Timeout
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.receiveQueue(FxmlEsbConnector.java:131)
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.sendAndRecv(FxmlEsbConnector.java:106)
+	at tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd.pmtAdd(FxmlEsbPmtAdd.java:164)
+	at tw.com.provision.fxml.fxmlsrv.FxmlSrvPortImpl.pmtAdd(FxmlSrvPortImpl.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:181)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:97)
+	at org.apache.cxf.jaxws.AbstractJAXWSMethodInvoker.invoke(AbstractJAXWSMethodInvoker.java:232)
+	at org.apache.cxf.jaxws.JAXWSMethodInvoker.invoke(JAXWSMethodInvoker.java:69)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:75)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$2.run(ServiceInvokerInterceptor.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-13 14:24:29 435] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-13 14:24:33 683] ERROR [com.pro.profep.agent.t24.impl.MyT24AgentImpl2 error 92] - [queueKey=,msgSender=Ap,msgSenderQueue=fxmlPlatformAgentQ,msgReceiver=Agent,msgReceiverQueue=fxmlT24AgentQ,timesTamp=0,referenceData=null,flowStep=null,flowStepList=,],[messageStatus=VALIDATE,IFXDocument=<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SignonRq Id="SignonRq">
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T14:24:32+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <SuppressEcho>1</SuppressEcho>
+  </SignonRq>
+  <PaySvcRq Id="PaySvcRq">
+    <RqUID>636f5cad-016e-1000-5000-c0a800430000</RqUID>
+    <PmtAddRq>
+      <tw.org.ba:MsgId>100100</tw.org.ba:MsgId>
+      <RqUID>636f5cb4-016e-1000-5001-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>F128986563</CustPermId>
+      </CustId>
+      <PmtInfo>
+        <LegalName>ALEX</LegalName>
+        <RemitInfo>
+          <SettlementInfo>
+            <SettlementMethod>FISC</SettlementMethod>
+            <SettlementId/>
+            <PmtInstruction>
+              <PmtFormat>FXML</PmtFormat>
+              <FeeChargeAlloc>
+                <ChargeRegulation>Payer</ChargeRegulation>
+                <Fee>
+                  <FeeType>Transaction</FeeType>
+                  <CurAmt>
+                    <Amt>0</Amt>
+                  </CurAmt>
+                </Fee>
+              </FeeChargeAlloc>
+            </PmtInstruction>
+          </SettlementInfo>
+          <CustPayeeId>F128986563</CustPayeeId>
+          <CustPayeeInfo>
+            <Name>ALEX</Name>
+            <XferPayee>
+              <DepAcctIdTo>
+                <AcctId>123456</AcctId>
+                <AcctType>SDA</AcctType>
+                <BankInfo>
+                  <BankId>123</BankId>
+                  <BranchId>0000</BranchId>
+                </BankInfo>
+              </DepAcctIdTo>
+            </XferPayee>
+          </CustPayeeInfo>
+          <CurAmt>
+            <Amt>1234</Amt>
+          </CurAmt>
+          <RemitDetail>
+            <BillRefInfo>N</BillRefInfo>
+            <Memo>789</Memo>
+          </RemitDetail>
+          <PmtRemitRefId>1234</PmtRemitRefId>
+          <RefInfo>
+            <RefType>01</RefType>
+            <RefId>1234</RefId>
+          </RefInfo>
+        </RemitInfo>
+        <DepAcctIdFrom>
+          <AcctId>A456</AcctId>
+          <AcctType>SDA</AcctType>
+          <BankInfo>
+            <BankId>048</BankId>
+            <BranchId>0011</BranchId>
+          </BankInfo>
+        </DepAcctIdFrom>
+        <PrcDt>2019-11-13</PrcDt>
+        <tw.org.ba:SettlementAmt>
+          <Amt>1234</Amt>
+        </tw.org.ba:SettlementAmt>
+      </PmtInfo>
+    </PmtAddRq>
+  </PaySvcRq>
+</IFX>,msgId=100100,IS_FIRST=N,txnDate=20191113,txnSeq=28,txnDetnum=1,orgMsgId=100100,txnStatusCode=0,txnStatusDesc=交易完成; Success,bank_chargeamt=20,fisc_chargeamt=10,settlementAmt=1234,realPayamt=1264,T24SystemHeader=FUNDS.TRANSFER,OBT.ACFX.INP/I/PROCESS,IFUFXMLB0001/123456,,DEBIT.ACCT.NO:1:1=A456,DEBIT.CURRENCY:1:1=TWD,DEBIT.AMOUNT:1:=1234,L.DR.NARR:1:1=789,COMMISSION.CODE:1:1=D,COMMISSION.TYPE:1:1=FXML,COMMISSION.AMT:1:1=TWD15,ORDERING.CUST:1:1=IBT,CREDIT.VALUE.DATE:1:1=20191113,L.ORG.CHRGAMT:1:1=TWD15,L.FISC.DATE:1:1=20191114,L.PMT.TYPE:1:1=100300,L.CHNN.CODE:1:1=IB,L.TX.SEQNO:1:1=2019111304800110000012,AMOUNT.DEBITED:1:1=0,FepTxSrcId=100100,FepTxId=30XBX8N,]
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2.processInternalMsg(MyT24AgentImpl2.java:735)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2$doTransaction.run(MyT24AgentImpl2.java:112)
+[2019-11-13 14:24:33 685] ERROR [com.pro.profep.agent.t24.impl.MyT24AgentImpl2 error 92] - Dispathch msg to function Err!!!
+com.pro.util.ApDefineException: fepMsg compose error[java.lang.NumberFormatException: null]
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2.processInternalMsg(MyT24AgentImpl2.java:770)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2$doTransaction.run(MyT24AgentImpl2.java:112)
+[2019-11-13 14:26:55 561] ERROR [tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd error 92] - 
+com.pro.util.ApDefineException: Receive Message Timeout
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.receiveQueue(FxmlEsbConnector.java:131)
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.sendAndRecv(FxmlEsbConnector.java:106)
+	at tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd.pmtAdd(FxmlEsbPmtAdd.java:164)
+	at tw.com.provision.fxml.fxmlsrv.FxmlSrvPortImpl.pmtAdd(FxmlSrvPortImpl.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:181)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:97)
+	at org.apache.cxf.jaxws.AbstractJAXWSMethodInvoker.invoke(AbstractJAXWSMethodInvoker.java:232)
+	at org.apache.cxf.jaxws.JAXWSMethodInvoker.invoke(JAXWSMethodInvoker.java:69)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:75)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$2.run(ServiceInvokerInterceptor.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-13 14:28:17 246] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-13 14:28:21 498] ERROR [com.pro.profep.agent.t24.impl.MyT24AgentImpl2 error 92] - [queueKey=,msgSender=Ap,msgSenderQueue=fxmlPlatformAgentQ,msgReceiver=Agent,msgReceiverQueue=fxmlT24AgentQ,timesTamp=0,referenceData=null,flowStep=null,flowStepList=,],[messageStatus=VALIDATE,IFXDocument=<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SignonRq Id="SignonRq">
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T14:28:20+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <SuppressEcho>1</SuppressEcho>
+  </SignonRq>
+  <PaySvcRq Id="PaySvcRq">
+    <RqUID>6372d6b0-016e-1000-5000-c0a800430000</RqUID>
+    <PmtAddRq>
+      <tw.org.ba:MsgId>100100</tw.org.ba:MsgId>
+      <RqUID>6372d6b8-016e-1000-5001-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>F128986563</CustPermId>
+      </CustId>
+      <PmtInfo>
+        <LegalName>ALEX</LegalName>
+        <RemitInfo>
+          <SettlementInfo>
+            <SettlementMethod>FISC</SettlementMethod>
+            <SettlementId/>
+            <PmtInstruction>
+              <PmtFormat>FXML</PmtFormat>
+              <FeeChargeAlloc>
+                <ChargeRegulation>Payer</ChargeRegulation>
+                <Fee>
+                  <FeeType>Transaction</FeeType>
+                  <CurAmt>
+                    <Amt>0</Amt>
+                  </CurAmt>
+                </Fee>
+              </FeeChargeAlloc>
+            </PmtInstruction>
+          </SettlementInfo>
+          <CustPayeeId>F128986563</CustPayeeId>
+          <CustPayeeInfo>
+            <Name>ALEX</Name>
+            <XferPayee>
+              <DepAcctIdTo>
+                <AcctId>123456</AcctId>
+                <AcctType>SDA</AcctType>
+                <BankInfo>
+                  <BankId>123</BankId>
+                  <BranchId>0000</BranchId>
+                </BankInfo>
+              </DepAcctIdTo>
+            </XferPayee>
+          </CustPayeeInfo>
+          <CurAmt>
+            <Amt>1234</Amt>
+          </CurAmt>
+          <RemitDetail>
+            <BillRefInfo>N</BillRefInfo>
+            <Memo>789</Memo>
+          </RemitDetail>
+          <PmtRemitRefId>1234</PmtRemitRefId>
+          <RefInfo>
+            <RefType>01</RefType>
+            <RefId>1234</RefId>
+          </RefInfo>
+        </RemitInfo>
+        <DepAcctIdFrom>
+          <AcctId>A456</AcctId>
+          <AcctType>SDA</AcctType>
+          <BankInfo>
+            <BankId>048</BankId>
+            <BranchId>0011</BranchId>
+          </BankInfo>
+        </DepAcctIdFrom>
+        <PrcDt>2019-11-13</PrcDt>
+        <tw.org.ba:SettlementAmt>
+          <Amt>1234</Amt>
+        </tw.org.ba:SettlementAmt>
+      </PmtInfo>
+    </PmtAddRq>
+  </PaySvcRq>
+</IFX>,msgId=100100,IS_FIRST=N,txnDate=20191113,txnSeq=29,txnDetnum=1,orgMsgId=100100,txnStatusCode=0,txnStatusDesc=交易完成; Success,bank_chargeamt=20,fisc_chargeamt=10,settlementAmt=1234,realPayamt=1264,T24SystemHeader=FUNDS.TRANSFER,OBT.ACFX.INP/I/PROCESS,IFUFXMLB0001/123456,,DEBIT.ACCT.NO:1:1=A456,DEBIT.CURRENCY:1:1=TWD,DEBIT.AMOUNT:1:=1234,L.DR.NARR:1:1=789,COMMISSION.CODE:1:1=D,COMMISSION.TYPE:1:1=FXML,COMMISSION.AMT:1:1=TWD15,ORDERING.CUST:1:1=IBT,CREDIT.VALUE.DATE:1:1=20191113,L.ORG.CHRGAMT:1:1=TWD15,L.FISC.DATE:1:1=20191114,L.PMT.TYPE:1:1=100300,L.CHNN.CODE:1:1=IB,L.TX.SEQNO:1:1=2019111304800110000013,AMOUNT.DEBITED:1:1=0,FepTxSrcId=100100,FepTxId=30XBX8N,]
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2.processInternalMsg(MyT24AgentImpl2.java:735)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2$doTransaction.run(MyT24AgentImpl2.java:112)
+[2019-11-13 14:28:21 500] ERROR [com.pro.profep.agent.t24.impl.MyT24AgentImpl2 error 92] - Dispathch msg to function Err!!!
+com.pro.util.ApDefineException: fepMsg compose error[java.lang.NumberFormatException: null]
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2.processInternalMsg(MyT24AgentImpl2.java:770)
+	at com.pro.profep.agent.t24.impl.MyT24AgentImpl2$doTransaction.run(MyT24AgentImpl2.java:112)
+[2019-11-13 14:30:44 355] ERROR [tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd error 92] - 
+com.pro.util.ApDefineException: Receive Message Timeout
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.receiveQueue(FxmlEsbConnector.java:131)
+	at tw.com.provision.fxml.fxmlsrv.connector.FxmlEsbConnector.sendAndRecv(FxmlEsbConnector.java:106)
+	at tw.com.provision.fxml.fxmlsrv.FxmlEsbPmtAdd.pmtAdd(FxmlEsbPmtAdd.java:164)
+	at tw.com.provision.fxml.fxmlsrv.FxmlSrvPortImpl.pmtAdd(FxmlSrvPortImpl.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:181)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:97)
+	at org.apache.cxf.jaxws.AbstractJAXWSMethodInvoker.invoke(AbstractJAXWSMethodInvoker.java:232)
+	at org.apache.cxf.jaxws.JAXWSMethodInvoker.invoke(JAXWSMethodInvoker.java:69)
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:75)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$2.run(ServiceInvokerInterceptor.java:126)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-13 14:30:55 476] FATAL [com.pro.profep.common.impl.FepBootStrapImpl main 92] - ***FEP SYSTEM START系統啟動***
+[2019-11-13 14:31:23 234] ERROR [com.pro.profep.ap.processor.fxmlap.P100100Req processInComingMsg 527] - processInComingMsg():  column not found: [L.PMT.HABAL:1:1]
+[2019-11-13 14:31:44 765] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100300(P100100Req.java:800)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:553)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 14:31:44 767] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert
+[2019-11-13 14:31:44 805] ERROR [FxmlFiscConnector error 92] - [FxmlFiscConnector][10014]
+java.lang.NullPointerException
+	at com.pro.profep.connector.common.impl.ConnectorType1Out.onMessage(ConnectorType1Out.java:216)
+	at org.apache.activemq.ActiveMQMessageConsumer.dispatch(ActiveMQMessageConsumer.java:1088)
+	at org.apache.activemq.ActiveMQSessionExecutor.dispatch(ActiveMQSessionExecutor.java:127)
+	at org.apache.activemq.ActiveMQSessionExecutor.iterate(ActiveMQSessionExecutor.java:197)
+	at org.apache.activemq.thread.PooledTaskRunner.runTask(PooledTaskRunner.java:122)
+	at org.apache.activemq.thread.PooledTaskRunner$1.run(PooledTaskRunner.java:43)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[2019-11-13 14:37:18 740] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl getIFXSignCert 240] - getIFXSignCert() fail. Could not send Message.
+javax.xml.ws.WebServiceException: Could not send Message.
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:149)
+	at com.sun.proxy.$Proxy60.exportSignCert(Unknown Source)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.getIFXSignCert(FXMLSecurityImpl.java:216)
+	at com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl.signIFX(FXMLSecurityImpl.java:321)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.signIFX(BaseFxmlApProcessorImpl.java:302)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.send100110(P100100Req.java:723)
+	at com.pro.profep.ap.processor.fxmlap.P100100Req.processInComingMsg(P100100Req.java:606)
+	at com.pro.profep.ap.fxmlap.impl.BaseFxmlApProcessorImpl.process(BaseFxmlApProcessorImpl.java:1653)
+	at com.pro.profep.ap.common.impl.BaseApProcessorImpl.mainProcess(BaseApProcessorImpl.java:34)
+	at com.pro.profep.ap.fxmlap.impl.FxmlApDispatcher.run(FxmlApDispatcher.java:116)
+Caused by: java.net.ConnectException: ConnectException invoking http://172.61.21.4:9080/prova-ws/services/BasicCryptoSrv: Connection timed out: connect
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.mapException(HTTPConduit.java:1365)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1349)
+	at org.apache.cxf.transport.AbstractConduit.close(AbstractConduit.java:56)
+	at org.apache.cxf.transport.http.HTTPConduit.close(HTTPConduit.java:652)
+	at org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor.handleMessage(MessageSenderInterceptor.java:62)
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:307)
+	at org.apache.cxf.endpoint.ClientImpl.doInvoke(ClientImpl.java:516)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:425)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:326)
+	at org.apache.cxf.endpoint.ClientImpl.invoke(ClientImpl.java:279)
+	at org.apache.cxf.frontend.ClientProxy.invokeSync(ClientProxy.java:96)
+	at org.apache.cxf.jaxws.JaxWsClientProxy.invoke(JaxWsClientProxy.java:138)
+	... 9 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(Unknown Source)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.setupWrappedStream(URLConnectionHTTPConduit.java:183)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.handleHeadersTrustCaching(HTTPConduit.java:1308)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.onFirstWrite(HTTPConduit.java:1268)
+	at org.apache.cxf.transport.http.URLConnectionHTTPConduit$URLConnectionWrappedOutputStream.onFirstWrite(URLConnectionHTTPConduit.java:210)
+	at org.apache.cxf.io.AbstractWrappedOutputStream.write(AbstractWrappedOutputStream.java:47)
+	at org.apache.cxf.io.AbstractThresholdOutputStream.write(AbstractThresholdOutputStream.java:69)
+	at org.apache.cxf.transport.http.HTTPConduit$WrappedOutputStream.close(HTTPConduit.java:1321)
+	... 19 more
+[2019-11-13 14:37:18 741] ERROR [com.pro.profep.ap.fxmlap.impl.FXMLSecurityImpl signIFX 460] - signIFX() can't find sign cert

@@ -1,0 +1,2 @@
+[2019-11-20 08:59:19 278] INFO  [FxmlCbsConnector initObj 116] - Cbs Pool Size=[10]
+[2019-11-20 08:59:19 421] INFO  [FxmlCbsConnector Connect 71] - Start [FxmlCbsConnector] Connector Service and send to [fxmlCbsConnectorQ]

@@ -1,0 +1,2801 @@
+[2019-11-13 09:03:48 840] INFO  [FxmlEsbConnector Connect 49] - Start FxmlEsbConnector Connector Service receive from [fxmlPlatformConnectorQ]
+[2019-11-13 09:10:17 236] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv?wsdl
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3], accept-encoding=[gzip, deflate, br], Accept-Language=[zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7], connection=[keep-alive], Content-Type=[null], Host=[127.0.0.1], Sec-Fetch-Mode=[navigate], Sec-Fetch-Site=[none], Sec-Fetch-User=[?1], Upgrade-Insecure-Requests=[1], User-Agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36]}
+--------------------------------------
+[2019-11-13 09:10:36 597] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv?wsdl
+Http-Method: GET
+Content-Type: 
+Headers: {connection=[keep-alive], Content-Type=[null], Host=[127.0.0.1], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+--------------------------------------
+[2019-11-13 09:10:45 803] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 3
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[760], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>?</TxnID>
+         <Channel>?</Channel>
+         <ID>?</ID>
+         <!--Optional:-->
+         <CustName>?</CustName>
+         <!--Optional:-->
+         <PayerAccount>?</PayerAccount>
+         <PayDueDate>?</PayDueDate>
+         <TxnAmount>?</TxnAmount>
+         <PayeeID>?</PayeeID>
+         <PayeeAccount>?</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>?</PayeeName>
+         <PayeeBank>?</PayeeBank>
+         <IsFirst>?</IsFirst>
+         <Remark>?</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 09:10:45 965] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 500
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode>soap:Client</faultcode><faultstring>Unmarshalling Error: ? </faultstring></soap:Fault></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 10:03:59 525] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 4
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[810], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>123</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>TAIWNA</CustName>
+         <!--Optional:-->
+         <PayerAccount></PayerAccount>
+         <PayDueDate>20191113</PayDueDate>
+         <TxnAmount>4567</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>ALEX61402</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>TAIWAN</PayeeBank>
+         <IsFirst>Y</IsFirst>
+         <Remark></Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 10:03:59 603] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>123</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>TAIWNA</CustName>
+    <PayerAccount></PayerAccount>
+    <PayDueDate></PayDueDate>
+    <TxnAmount>4567</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>ALEX61402</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>TAIWAN</PayeeBank>
+    <IsFirst>Y</IsFirst>
+    <Remark></Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 10:03:59 962] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 10:04:21 640] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 10:04:21 643] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T10:03:59+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T10:04:00+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>6280d1e9-016e-1000-5000-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>2100</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>日期錯誤; Invalid Datetime –Single date or Low of range</StatusDesc>
+      </Status>
+      <RqUID>6280d1fb-016e-1000-5001-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>70745361</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>6280d1fb-016e-1000-5001-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>王道銀行</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId/>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>30</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>ALEX61402</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>TAIWAN</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>4567</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>Y</BillRefInfo>
+              <Memo>ALEX61402</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>123</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>123</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>00000055163010</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>4567</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 10:04:21 646] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=6280d1e9-016e-1000-5000-c0a800430000
+[2019-11-13 10:04:21 670] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>2100</RtrnCode>
+    <RtrnDesc>日期錯誤; Invalid Datetime –Single date or Low of range</RtrnDesc>
+    <TxnID>123</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult>2100</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 10:04:21 672] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>2100</RtrnCode><RtrnDesc>日期錯誤; Invalid Datetime –Single date or Low of range</RtrnDesc><TxnID>123</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult>2100</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 10:06:25 798] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 5
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[841], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>12223456455555222213333232321313</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>TAIWNA</CustName>
+         <!--Optional:-->
+         <PayerAccount></PayerAccount>
+         <PayDueDate>2019-11-10</PayDueDate>
+         <TxnAmount>4567</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>ALEX61402</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>TAIWAN</PayeeBank>
+         <IsFirst>Y</IsFirst>
+         <Remark></Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 10:06:25 810] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>12223456455555222213333232321313</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>TAIWNA</CustName>
+    <PayerAccount></PayerAccount>
+    <PayDueDate>2019-11-10</PayDueDate>
+    <TxnAmount>4567</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>ALEX61402</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>TAIWAN</PayeeBank>
+    <IsFirst>Y</IsFirst>
+    <Remark></Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 10:06:25 817] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 10:06:46 940] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 10:06:46 941] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T10:06:25+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T10:06:25+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>62830c15-016e-1000-5002-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>2100</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>日期錯誤; Invalid Datetime –Single date or Low of range</StatusDesc>
+      </Status>
+      <RqUID>62830c15-016e-1000-5003-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>70745361</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>62830c15-016e-1000-5003-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>王道銀行</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId/>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>30</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>ALEX61402</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>TAIWAN</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>4567</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>Y</BillRefInfo>
+              <Memo>ALEX61402</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>12223456455555222213333232321313</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>12223456455555222213333232321313</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>00000055163010</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>4567</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 10:06:46 943] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=62830c15-016e-1000-5002-c0a800430000
+[2019-11-13 10:06:46 960] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>2100</RtrnCode>
+    <RtrnDesc>日期錯誤; Invalid Datetime –Single date or Low of range</RtrnDesc>
+    <TxnID>12223456455555222213333232321313</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult>2100</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 10:06:46 962] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 5
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>2100</RtrnCode><RtrnDesc>日期錯誤; Invalid Datetime –Single date or Low of range</RtrnDesc><TxnID>12223456455555222213333232321313</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult>2100</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 10:08:33 873] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 6
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[841], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>12223456455555222213333232321313</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>TAIWNA</CustName>
+         <!--Optional:-->
+         <PayerAccount></PayerAccount>
+         <PayDueDate>2019-11-15</PayDueDate>
+         <TxnAmount>4567</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>ALEX61402</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>TAIWAN</PayeeBank>
+         <IsFirst>Y</IsFirst>
+         <Remark></Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 10:08:33 884] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>12223456455555222213333232321313</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>TAIWNA</CustName>
+    <PayerAccount></PayerAccount>
+    <PayDueDate>2019-11-15</PayDueDate>
+    <TxnAmount>4567</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>ALEX61402</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>TAIWAN</PayeeBank>
+    <IsFirst>Y</IsFirst>
+    <Remark></Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 10:08:33 889] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 10:08:54 990] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 10:08:54 991] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T10:08:33+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T10:08:33+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>6285005e-016e-1000-5004-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>2100</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>日期錯誤; Invalid Datetime –Single date or Low of range</StatusDesc>
+      </Status>
+      <RqUID>6285005e-016e-1000-5005-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>70745361</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>6285005e-016e-1000-5005-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>王道銀行</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId/>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>30</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>ALEX61402</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>TAIWAN</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>4567</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>Y</BillRefInfo>
+              <Memo>ALEX61402</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>12223456455555222213333232321313</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>12223456455555222213333232321313</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>00000055163010</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>4567</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 10:08:54 992] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=6285005e-016e-1000-5004-c0a800430000
+[2019-11-13 10:08:54 999] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>2100</RtrnCode>
+    <RtrnDesc>日期錯誤; Invalid Datetime –Single date or Low of range</RtrnDesc>
+    <TxnID>12223456455555222213333232321313</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult>2100</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 10:08:55 000] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 6
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>2100</RtrnCode><RtrnDesc>日期錯誤; Invalid Datetime –Single date or Low of range</RtrnDesc><TxnID>12223456455555222213333232321313</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult>2100</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 10:23:48 707] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 7
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[841], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>12223456455555222213333232321313</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>TAIWNA</CustName>
+         <!--Optional:-->
+         <PayerAccount></PayerAccount>
+         <PayDueDate>2019-11-12</PayDueDate>
+         <TxnAmount>4567</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>ALEX61402</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>TAIWAN</PayeeBank>
+         <IsFirst>Y</IsFirst>
+         <Remark></Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 10:23:48 719] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>12223456455555222213333232321313</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>TAIWNA</CustName>
+    <PayerAccount></PayerAccount>
+    <PayDueDate>2019-11-12</PayDueDate>
+    <TxnAmount>4567</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>ALEX61402</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>TAIWAN</PayeeBank>
+    <IsFirst>Y</IsFirst>
+    <Remark></Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 10:23:48 727] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 10:24:09 813] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 10:24:09 814] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T10:23:48+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T10:23:48+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>6292f5f1-016e-1000-5006-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>2100</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>日期錯誤; Invalid Datetime –Single date or Low of range</StatusDesc>
+      </Status>
+      <RqUID>6292f5f2-016e-1000-5007-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>70745361</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>6292f5f2-016e-1000-5007-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>王道銀行</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId/>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>30</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>ALEX61402</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>TAIWAN</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>4567</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>Y</BillRefInfo>
+              <Memo>ALEX61402</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>12223456455555222213333232321313</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>12223456455555222213333232321313</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>00000055163010</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>4567</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 10:24:09 815] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=6292f5f1-016e-1000-5006-c0a800430000
+[2019-11-13 10:24:09 828] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>2100</RtrnCode>
+    <RtrnDesc>日期錯誤; Invalid Datetime –Single date or Low of range</RtrnDesc>
+    <TxnID>12223456455555222213333232321313</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult>2100</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 10:24:09 829] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 7
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>2100</RtrnCode><RtrnDesc>日期錯誤; Invalid Datetime –Single date or Low of range</RtrnDesc><TxnID>12223456455555222213333232321313</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult>2100</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 10:26:05 136] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 8
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[841], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>12223456455555222213333232321313</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>TAIWNA</CustName>
+         <!--Optional:-->
+         <PayerAccount></PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>4567</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>ALEX61402</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>TAIWAN</PayeeBank>
+         <IsFirst>Y</IsFirst>
+         <Remark></Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 10:26:05 147] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>12223456455555222213333232321313</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>TAIWNA</CustName>
+    <PayerAccount></PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>4567</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>ALEX61402</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>TAIWAN</PayeeBank>
+    <IsFirst>Y</IsFirst>
+    <Remark></Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 10:26:05 152] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 10:26:26 295] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 10:26:26 298] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T10:26:05+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T10:26:05+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>62950add-016e-1000-5008-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>310</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>往來銀行未參加本項業務</StatusDesc>
+      </Status>
+      <RqUID>62950add-016e-1000-5009-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>70745361</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>62950add-016e-1000-5009-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>王道銀行</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId/>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>30</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>ALEX61402</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>TAIWAN</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>4567</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>Y</BillRefInfo>
+              <Memo>ALEX61402</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>12223456455555222213333232321313</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>12223456455555222213333232321313</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>00000055163010</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>4567</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 10:26:26 299] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=62950add-016e-1000-5008-c0a800430000
+[2019-11-13 10:26:26 315] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>310</RtrnCode>
+    <RtrnDesc>往來銀行未參加本項業務</RtrnDesc>
+    <TxnID>12223456455555222213333232321313</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult>310</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 10:26:26 316] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 8
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>310</RtrnCode><RtrnDesc>往來銀行未參加本項業務</RtrnDesc><TxnID>12223456455555222213333232321313</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult>310</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 10:27:40 333] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 9
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[838], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>12223456455555222213333232321313</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>TAIWNA</CustName>
+         <!--Optional:-->
+         <PayerAccount></PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>4567</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>ALEX61402</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>Y</IsFirst>
+         <Remark></Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 10:27:40 345] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>12223456455555222213333232321313</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>TAIWNA</CustName>
+    <PayerAccount></PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>4567</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>ALEX61402</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>Y</IsFirst>
+    <Remark></Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 10:27:40 350] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 10:29:43 365] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 10:29:43 366] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T10:27:40+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T10:29:43+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>62967ebb-016e-1000-500a-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>390</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>跨行交易逾時未回應</StatusDesc>
+      </Status>
+      <RqUID>62967ebc-016e-1000-500b-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>70745361</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>62967ebc-016e-1000-500b-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>王道銀行</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId>04820191113000000001</SettlementId>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>0</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>ALEX61402</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>123</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>0</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>Y</BillRefInfo>
+              <Memo>0;0;0;0</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>12223456455555222213333232321313</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>12223456455555222213333232321313</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>00000055163010</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>4567</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 10:29:43 367] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=62967ebb-016e-1000-500a-c0a800430000
+[2019-11-13 10:29:43 383] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>390</RtrnCode>
+    <RtrnDesc>跨行交易逾時未回應</RtrnDesc>
+    <TxnID>12223456455555222213333232321313</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan>04820191113000000001</FiscStan>
+    <FiscResult>390</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 10:29:43 385] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 9
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>390</RtrnCode><RtrnDesc>跨行交易逾時未回應</RtrnDesc><TxnID>12223456455555222213333232321313</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan>04820191113000000001</FiscStan><FiscResult>390</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 10:35:46 751] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 10
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[813], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>1222</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>TAIWNA</CustName>
+         <!--Optional:-->
+         <PayerAccount></PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>4567</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>ALEX61402</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>Y</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 10:35:46 762] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>1222</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>TAIWNA</CustName>
+    <PayerAccount></PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>4567</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>ALEX61402</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>Y</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 10:35:46 767] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 10:37:49 593] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 10:37:49 594] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T10:35:46+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T10:37:49+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>629deacc-016e-1000-500c-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>390</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>跨行交易逾時未回應</StatusDesc>
+      </Status>
+      <RqUID>629deacd-016e-1000-500d-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>70745361</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>629deacd-016e-1000-500d-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>王道銀行</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId>04820191113000000002</SettlementId>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>0</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>ALEX61402</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>123</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>0</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>Y</BillRefInfo>
+              <Memo>0;0;0;0</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>1222</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>1222</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>00000055163010</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>4567</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 10:37:49 595] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=629deacc-016e-1000-500c-c0a800430000
+[2019-11-13 10:37:49 611] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>390</RtrnCode>
+    <RtrnDesc>跨行交易逾時未回應</RtrnDesc>
+    <TxnID>1222</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan>04820191113000000002</FiscStan>
+    <FiscResult>390</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 10:37:49 613] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 10
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>390</RtrnCode><RtrnDesc>跨行交易逾時未回應</RtrnDesc><TxnID>1222</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan>04820191113000000002</FiscStan><FiscResult>390</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 10:41:36 104] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 11
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[819], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>1222</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>TAIWNA</CustName>
+         <!--Optional:-->
+         <PayerAccount>a12312</PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>4567</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>ALEX61402</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>N</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 10:41:36 113] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>1222</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>TAIWNA</CustName>
+    <PayerAccount>a12312</PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>4567</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>ALEX61402</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>N</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 10:41:36 117] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 10:42:28 788] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 10:42:28 789] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T10:41:36+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T10:42:07+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>62a33f73-016e-1000-500e-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>390</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>跨行交易逾時未回應</StatusDesc>
+      </Status>
+      <RqUID>62a33f73-016e-1000-500f-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>F128986563</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>62a33f73-016e-1000-500f-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>TAIWNA</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId/>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>30</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>ALEX61402</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>123</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>4567</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>N</BillRefInfo>
+              <Memo>789</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>1222</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>1222</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>a12312</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>4567</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 10:42:28 790] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=62a33f73-016e-1000-500e-c0a800430000
+[2019-11-13 10:42:28 802] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>390</RtrnCode>
+    <RtrnDesc>跨行交易逾時未回應</RtrnDesc>
+    <TxnID>1222</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult>390</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 10:42:28 804] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 11
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>390</RtrnCode><RtrnDesc>跨行交易逾時未回應</RtrnDesc><TxnID>1222</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult>390</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 11:03:28 606] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 12
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[819], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>1222</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>TAIWNA</CustName>
+         <!--Optional:-->
+         <PayerAccount>a12312</PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>4567</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>ALEX61402</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>N</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 11:03:28 617] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>1222</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>TAIWNA</CustName>
+    <PayerAccount>a12312</PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>4567</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>ALEX61402</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>N</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 11:03:28 621] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 11:04:21 708] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 11:04:21 709] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T11:03:28+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T11:04:00+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>62b7466b-016e-1000-5010-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>390</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>跨行交易逾時未回應</StatusDesc>
+      </Status>
+      <RqUID>62b7466b-016e-1000-5011-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>F128986563</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>62b7466b-016e-1000-5011-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>TAIWNA</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId/>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>30</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>ALEX61402</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>123</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>4567</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>N</BillRefInfo>
+              <Memo>789</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>1222</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>1222</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>a12312</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>4567</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 11:04:21 710] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=62b7466b-016e-1000-5010-c0a800430000
+[2019-11-13 11:04:21 718] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>390</RtrnCode>
+    <RtrnDesc>跨行交易逾時未回應</RtrnDesc>
+    <TxnID>1222</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult>390</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 11:04:21 718] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 12
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>390</RtrnCode><RtrnDesc>跨行交易逾時未回應</RtrnDesc><TxnID>1222</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult>390</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 13:47:48 124] INFO  [FxmlEsbConnector Connect 49] - Start FxmlEsbConnector Connector Service receive from [fxmlPlatformConnectorQ]
+[2019-11-13 13:48:31 859] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv?wsdl
+Http-Method: GET
+Content-Type: 
+Headers: {Accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3], accept-encoding=[gzip, deflate, br], Accept-Language=[zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7], connection=[keep-alive], Content-Type=[null], Host=[127.0.0.1], Sec-Fetch-Mode=[navigate], Sec-Fetch-Site=[none], Sec-Fetch-User=[?1], Upgrade-Insecure-Requests=[1], User-Agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36]}
+--------------------------------------
+[2019-11-13 13:48:57 578] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv?wsdl
+Http-Method: GET
+Content-Type: 
+Headers: {connection=[keep-alive], Content-Type=[null], Host=[127.0.0.1], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+--------------------------------------
+[2019-11-13 13:49:02 823] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 3
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[760], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>?</TxnID>
+         <Channel>?</Channel>
+         <ID>?</ID>
+         <!--Optional:-->
+         <CustName>?</CustName>
+         <!--Optional:-->
+         <PayerAccount>?</PayerAccount>
+         <PayDueDate>?</PayDueDate>
+         <TxnAmount>?</TxnAmount>
+         <PayeeID>?</PayeeID>
+         <PayeeAccount>?</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>?</PayeeName>
+         <PayeeBank>?</PayeeBank>
+         <IsFirst>?</IsFirst>
+         <Remark>?</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 13:49:02 892] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 3
+Response-Code: 500
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode>soap:Client</faultcode><faultstring>Unmarshalling Error: ? </faultstring></soap:Fault></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 13:51:17 474] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 4
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[828], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>12345612345612345612345612345612</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName></CustName>
+         <!--Optional:-->
+         <PayerAccount></PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>1234</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>123456</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName></PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>N</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 13:51:17 504] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>12345612345612345612345612345612</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName></CustName>
+    <PayerAccount></PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>1234</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>123456</PayeeAccount>
+    <PayeeName></PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>N</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 13:51:17 741] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 13:51:39 390] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 13:51:39 392] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T13:51:17+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T13:51:17+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>6350eaa8-016e-1000-5000-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>1020</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>必要欄位不齊全; Required Element Not Includes</StatusDesc>
+      </Status>
+      <RqUID>6350eab0-016e-1000-5001-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>F128986563</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>6350eab0-016e-1000-5001-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName/>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId/>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>30</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name/>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>123456</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>123</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>1234</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>N</BillRefInfo>
+              <Memo>789</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>12345612345612345612345612345612</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>12345612345612345612345612345612</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId/>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>1234</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 13:51:39 394] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=6350eaa8-016e-1000-5000-c0a800430000
+[2019-11-13 13:51:39 411] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>1020</RtrnCode>
+    <RtrnDesc>必要欄位不齊全; Required Element Not Includes</RtrnDesc>
+    <TxnID>12345612345612345612345612345612</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult>1020</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 13:51:39 412] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 4
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>1020</RtrnCode><RtrnDesc>必要欄位不齊全; Required Element Not Includes</RtrnDesc><TxnID>12345612345612345612345612345612</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult>1020</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 13:52:34 625] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 5
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[840], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>12345612345612345612345612345612</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>ALEX</CustName>
+         <!--Optional:-->
+         <PayerAccount>A456</PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>1234</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>123456</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>N</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 13:52:34 638] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>12345612345612345612345612345612</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>ALEX</CustName>
+    <PayerAccount>A456</PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>1234</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>123456</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>N</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 13:52:34 645] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 13:54:57 408] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>390</RtrnCode>
+    <RtrnDesc>跨行交易逾時未回應</RtrnDesc>
+    <TxnID>12345612345612345612345612345612</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult></FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 13:54:57 409] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 5
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>390</RtrnCode><RtrnDesc>跨行交易逾時未回應</RtrnDesc><TxnID>12345612345612345612345612345612</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult></FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 14:05:09 676] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 6
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[812], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>1234</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>ALEX</CustName>
+         <!--Optional:-->
+         <PayerAccount>A456</PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>1234</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>123456</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>N</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 14:05:09 688] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>1234</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>ALEX</CustName>
+    <PayerAccount>A456</PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>1234</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>123456</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>N</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 14:05:09 695] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 14:07:32 558] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>390</RtrnCode>
+    <RtrnDesc>跨行交易逾時未回應</RtrnDesc>
+    <TxnID>1234</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult></FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 14:07:32 559] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 6
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>390</RtrnCode><RtrnDesc>跨行交易逾時未回應</RtrnDesc><TxnID>1234</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult></FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 14:12:06 108] INFO  [FxmlEsbConnector Connect 49] - Start FxmlEsbConnector Connector Service receive from [fxmlPlatformConnectorQ]
+[2019-11-13 14:12:27 906] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[812], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>1234</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>ALEX</CustName>
+         <!--Optional:-->
+         <PayerAccount>A456</PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>1234</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>123456</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>N</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 14:12:27 978] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>1234</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>ALEX</CustName>
+    <PayerAccount>A456</PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>1234</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>123456</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>N</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 14:12:28 216] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 14:14:50 991] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>390</RtrnCode>
+    <RtrnDesc>跨行交易逾時未回應</RtrnDesc>
+    <TxnID>1234</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult></FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 14:14:51 004] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>390</RtrnCode><RtrnDesc>跨行交易逾時未回應</RtrnDesc><TxnID>1234</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult></FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 14:24:32 548] INFO  [FxmlEsbConnector Connect 49] - Start FxmlEsbConnector Connector Service receive from [fxmlPlatformConnectorQ]
+[2019-11-13 14:24:32 687] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[812], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>1234</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>ALEX</CustName>
+         <!--Optional:-->
+         <PayerAccount>A456</PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>1234</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>123456</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>N</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 14:24:32 769] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>1234</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>ALEX</CustName>
+    <PayerAccount>A456</PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>1234</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>123456</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>N</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 14:24:33 006] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 14:26:55 576] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>390</RtrnCode>
+    <RtrnDesc>跨行交易逾時未回應</RtrnDesc>
+    <TxnID>1234</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult></FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 14:26:55 585] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>390</RtrnCode><RtrnDesc>跨行交易逾時未回應</RtrnDesc><TxnID>1234</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult></FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 14:28:20 427] INFO  [FxmlEsbConnector Connect 49] - Start FxmlEsbConnector Connector Service receive from [fxmlPlatformConnectorQ]
+[2019-11-13 14:28:20 538] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[812], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>1234</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>ALEX</CustName>
+         <!--Optional:-->
+         <PayerAccount>A456</PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>1234</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>123456</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>N</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 14:28:20 619] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>1234</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>ALEX</CustName>
+    <PayerAccount>A456</PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>1234</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>123456</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>N</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 14:28:20 849] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 14:30:44 370] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>390</RtrnCode>
+    <RtrnDesc>跨行交易逾時未回應</RtrnDesc>
+    <TxnID>1234</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult></FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 14:30:44 378] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>390</RtrnCode><RtrnDesc>跨行交易逾時未回應</RtrnDesc><TxnID>1234</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult></FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 14:30:58 628] INFO  [FxmlEsbConnector Connect 49] - Start FxmlEsbConnector Connector Service receive from [fxmlPlatformConnectorQ]
+[2019-11-13 14:31:22 263] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 1
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[812], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>1234</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>ALEX</CustName>
+         <!--Optional:-->
+         <PayerAccount>A456</PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>1234</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>123456</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>N</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 14:31:22 338] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>1234</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>ALEX</CustName>
+    <PayerAccount>A456</PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>1234</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>123456</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>N</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 14:31:22 575] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 14:33:26 713] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 14:33:26 715] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T14:31:22+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T14:33:26+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>0</StatusCode>
+      <Severity>Info</Severity>
+      <StatusDesc>交易完成; Success</StatusDesc>
+    </Status>
+    <RqUID>63759c8d-016e-1000-5000-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>390</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>跨行交易逾時未回應</StatusDesc>
+      </Status>
+      <RqUID>63759c95-016e-1000-5001-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>F128986563</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>63759c95-016e-1000-5001-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>ALEX</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId>04820191113000000003</SettlementId>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>0</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>123456</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>123</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>0</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>N</BillRefInfo>
+              <Memo>0;0;0;0</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>1234</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>1234</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>A456</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>1234</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 14:33:26 717] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=63759c8d-016e-1000-5000-c0a800430000
+[2019-11-13 14:33:26 735] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>390</RtrnCode>
+    <RtrnDesc>跨行交易逾時未回應</RtrnDesc>
+    <TxnID>1234</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan>04820191113000000003</FiscStan>
+    <FiscResult>390</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 14:33:26 751] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>390</RtrnCode><RtrnDesc>跨行交易逾時未回應</RtrnDesc><TxnID>1234</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan>04820191113000000003</FiscStan><FiscResult>390</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------
+[2019-11-13 14:36:57 598] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Inbound Message
+----------------------------
+ID: 2
+Address: http://127.0.0.1/IBT_FXML_AP/services/fxmlsrv
+Encoding: UTF-8
+Http-Method: POST
+Content-Type: text/xml;charset=UTF-8
+Headers: {accept-encoding=[gzip,deflate], connection=[keep-alive], Content-Length=[812], content-type=[text/xml;charset=UTF-8], Host=[127.0.0.1], SOAPAction=[""], User-Agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
+Payload: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:fxm="http://fxml.provision.com.tw/FxmlSrv">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <fxm:PmtAddRq>
+         <TxnID>1234</TxnID>
+         <Channel>01</Channel>
+         <ID>F128986563</ID>
+         <!--Optional:-->
+         <CustName>ALEX</CustName>
+         <!--Optional:-->
+         <PayerAccount>A456</PayerAccount>
+         <PayDueDate>2019-11-13</PayDueDate>
+         <TxnAmount>1234</TxnAmount>
+         <PayeeID>F128986563</PayeeID>
+         <PayeeAccount>123456</PayeeAccount>
+         <!--Optional:-->
+         <PayeeName>ALEX</PayeeName>
+         <PayeeBank>123</PayeeBank>
+         <IsFirst>N</IsFirst>
+         <Remark>789</Remark>
+      </fxm:PmtAddRq>
+   </soapenv:Body>
+</soapenv:Envelope>
+--------------------------------------
+[2019-11-13 14:36:57 613] INFO  [FxmlEsbConnector pmtAdd 38] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRq xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <TxnID>1234</TxnID>
+    <Channel>01</Channel>
+    <ID>F128986563</ID>
+    <CustName>ALEX</CustName>
+    <PayerAccount>A456</PayerAccount>
+    <PayDueDate>2019-11-13</PayDueDate>
+    <TxnAmount>1234</TxnAmount>
+    <PayeeID>F128986563</PayeeID>
+    <PayeeAccount>123456</PayeeAccount>
+    <PayeeName>ALEX</PayeeName>
+    <PayeeBank>123</PayeeBank>
+    <IsFirst>N</IsFirst>
+    <Remark>789</Remark>
+</ns2:pmtAddRq>
+
+[2019-11-13 14:36:57 620] DEBUG [FxmlEsbConnector putQueue 141] - Out putQurere to fxmlPlatformAgentQ
+[2019-11-13 14:37:18 765] DEBUG [FxmlEsbConnector onMessage 81] - FxmlEsbConnector: receive from Queue[fxmlPlatformConnectorQ]
+[2019-11-13 14:37:18 766] DEBUG [FxmlEsbConnector onMessage 89] - onMessage ()<IFX xsi:schemaLocation="http://www.ifxforum.org http://www.ba.org.tw/FXML/IFX130-TW13-Interbank-URI.xsd" xmlns="http://www.ifxforum.org" xmlns:tw.org.ba="http://www.ba.org.tw" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Status Id="Status">
+    <StatusCode>0</StatusCode>
+    <Severity>Info</Severity>
+    <StatusDesc>交易完成; Success</StatusDesc>
+  </Status>
+  <SignonRs Id="SignonRs">
+    <Status>
+      <StatusCode>1420</StatusCode>
+      <Severity>Error</Severity>
+      <StatusDesc>用戶識別碼無效; &lt;CustId> invalid</StatusDesc>
+    </Status>
+    <tw.org.ba:ClientSignatureInfo>
+      <tw.org.ba:CustId>
+        <tw.org.ba:SPName>FISC</tw.org.ba:SPName>
+        <tw.org.ba:CustLoginId>048</tw.org.ba:CustLoginId>
+      </tw.org.ba:CustId>
+      <tw.org.ba:ClientSignature>Client</tw.org.ba:ClientSignature>
+    </tw.org.ba:ClientSignatureInfo>
+    <ClientDt>2019-11-13T14:36:57+480</ClientDt>
+    <CustLangPref>zh-TW</CustLangPref>
+    <ClientApp>
+      <Org>com.ibt</Org>
+      <Name>FXML Found Transfer</Name>
+      <Version>1.0</Version>
+    </ClientApp>
+    <ServerDt>2019-11-13T14:36:57+480</ServerDt>
+    <Language>zh-TW</Language>
+    <tw.org.ba:ServerSignature>Server</tw.org.ba:ServerSignature>
+  </SignonRs>
+  <PaySvcRs Id="PaySvcRs">
+    <Status>
+      <StatusCode>1420</StatusCode>
+      <Severity>Error</Severity>
+      <StatusDesc>用戶識別碼無效; &lt;CustId> invalid</StatusDesc>
+    </Status>
+    <RqUID>637ab98f-016e-1000-5002-c0a800430000</RqUID>
+    <PmtAddRs>
+      <tw.org.ba:MsgId>100110</tw.org.ba:MsgId>
+      <Status>
+        <StatusCode>1420</StatusCode>
+        <Severity>Error</Severity>
+        <StatusDesc>用戶識別碼無效; &lt;CustId> invalid</StatusDesc>
+      </Status>
+      <RqUID>637ab990-016e-1000-5003-c0a800430000</RqUID>
+      <CustId>
+        <SPName>TWN</SPName>
+        <CustPermId>F128986563</CustPermId>
+      </CustId>
+      <PmtRec>
+        <PmtId>637ab990-016e-1000-5003-c0a800430000</PmtId>
+        <PmtInfo>
+          <LegalName>ALEX</LegalName>
+          <RemitInfo>
+            <SettlementInfo>
+              <SettlementMethod>FISC</SettlementMethod>
+              <SettlementId/>
+              <PmtInstruction>
+                <PmtFormat>FXML</PmtFormat>
+                <FeeChargeAlloc>
+                  <ChargeRegulation>Payer</ChargeRegulation>
+                  <Fee>
+                    <FeeType>Transaction</FeeType>
+                    <CurAmt>
+                      <Amt>30</Amt>
+                    </CurAmt>
+                  </Fee>
+                </FeeChargeAlloc>
+              </PmtInstruction>
+            </SettlementInfo>
+            <CustPayeeId>F128986563</CustPayeeId>
+            <CustPayeeInfo>
+              <Name>ALEX</Name>
+              <XferPayee>
+                <DepAcctIdTo>
+                  <AcctId>123456</AcctId>
+                  <AcctType>SDA</AcctType>
+                  <BankInfo>
+                    <BankId>123</BankId>
+                    <BranchId>0000</BranchId>
+                  </BankInfo>
+                </DepAcctIdTo>
+              </XferPayee>
+            </CustPayeeInfo>
+            <CurAmt>
+              <Amt>1234</Amt>
+            </CurAmt>
+            <RemitDetail>
+              <BillRefInfo>N</BillRefInfo>
+              <Memo>789</Memo>
+            </RemitDetail>
+            <PmtRemitRefId>1234</PmtRemitRefId>
+            <RefInfo>
+              <RefType>01</RefType>
+              <RefId>1234</RefId>
+            </RefInfo>
+          </RemitInfo>
+          <DepAcctIdFrom>
+            <AcctId>A456</AcctId>
+            <AcctType>SDA</AcctType>
+            <BankInfo>
+              <BankId>048</BankId>
+              <BranchId>0011</BranchId>
+            </BankInfo>
+          </DepAcctIdFrom>
+          <PrcDt>2019-11-13</PrcDt>
+          <tw.org.ba:SettlementAmt>
+            <Amt>1234</Amt>
+          </tw.org.ba:SettlementAmt>
+        </PmtInfo>
+        <PmtStatus>
+          <PmtStatusCode>Processed</PmtStatusCode>
+          <EffDt>2019-11-13</EffDt>
+        </PmtStatus>
+      </PmtRec>
+    </PmtAddRs>
+  </PaySvcRs>
+</IFX>
+[2019-11-13 14:37:18 768] DEBUG [FxmlEsbConnector onMessage 91] - onMessage () RqUID=637ab98f-016e-1000-5002-c0a800430000
+[2019-11-13 14:37:18 776] INFO  [FxmlEsbConnector pmtAdd 41] - <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:pmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv">
+    <RtrnCode>1420</RtrnCode>
+    <RtrnDesc>用戶識別碼無效; &lt;CustId&gt; invalid</RtrnDesc>
+    <TxnID>1234</TxnID>
+    <TxnDate>2019-11-13</TxnDate>
+    <DebitAmount>0</DebitAmount>
+    <RealFee>0</RealFee>
+    <AvailBalance>0</AvailBalance>
+    <AccountBalance>0</AccountBalance>
+    <FiscStan></FiscStan>
+    <FiscResult>1420</FiscResult>
+</ns2:pmtAddRs>
+
+[2019-11-13 14:37:18 776] INFO  [org.apache.cxf.services.FxmlSrvService.FxmlSrvPort.FxmlSrv log 250] - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {}
+Payload: <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:PmtAddRs xmlns:ns2="http://fxml.provision.com.tw/FxmlSrv"><RtrnCode>1420</RtrnCode><RtrnDesc>用戶識別碼無效; &lt;CustId&gt; invalid</RtrnDesc><TxnID>1234</TxnID><TxnDate>2019-11-13</TxnDate><DebitAmount>0</DebitAmount><RealFee>0</RealFee><AvailBalance>0</AvailBalance><AccountBalance>0</AccountBalance><FiscStan></FiscStan><FiscResult>1420</FiscResult></ns2:PmtAddRs></soap:Body></soap:Envelope>
+--------------------------------------

@@ -1,0 +1,384 @@
+[2019-11-18 10:32:26 669][ServerService Thread Pool -- 74] INFO  [org.zkoss.zk.ui.http.WebManager <init> 114] - Starting ZK 7.0.3 CE (build: 2014090212)
+[2019-11-18 10:32:26 683][ServerService Thread Pool -- 74] INFO  [org.zkoss.zk.ui.sys.ConfigParser parseConfigXml 164] - Loading system default
+[2019-11-18 10:32:26 717][ServerService Thread Pool -- 74] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing vfs:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/lib/zul.jar/metainfo/zk/zk.xml
+[2019-11-18 10:32:26 728][ServerService Thread Pool -- 74] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/zk.xml
+[2019-11-18 10:32:29 221][ServerService Thread Pool -- 74] INFO  [org.quartz.simpl.SimpleThreadPool initialize 253] - Job execution threads will use class loader of thread: ServerService Thread Pool -- 74
+[2019-11-18 10:32:29 228][ServerService Thread Pool -- 74] INFO  [org.quartz.simpl.RAMJobStore initialize 143] - RAMJobStore initialized.
+[2019-11-18 10:32:29 229][ServerService Thread Pool -- 74] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 919] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-11-18 10:32:29 229][ServerService Thread Pool -- 74] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 923] - Quartz scheduler version: 1.4.5
+[2019-11-18 10:32:29 940][ServerService Thread Pool -- 74] INFO  [com.pro.proutils.schedule.Schedule add 129] - Add Job Name=[RoleInfo] Group=[DEFAULT] expression=[0 0 7 * * ?]
+[2019-11-18 10:32:29 941][ServerService Thread Pool -- 74] INFO  [org.quartz.core.QuartzScheduler start 370] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-11-18 10:32:31 331][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh_TW
+[2019-11-18 10:32:31 336][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl load 380] - Opening file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/i3-label_zh_TW.properties
+[2019-11-18 10:32:31 341][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh
+[2019-11-18 10:32:46 619][default task-1] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 94] - 127.0.0.1
+[2019-11-18 10:32:46 620][default task-1] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 99] - uid = SuperUser
+[2019-11-18 10:32:47 506][default task-1] INFO  [stdout write 71] - Seqno = 6
+[2019-11-18 10:32:47 513][default task-1] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-18 10:32:47 514][default task-1] INFO  [stdout write 71] - getSeqno spend 642 msecs.
+[2019-11-18 10:32:47 514][default task-1] INFO  [stdout write 71] - getSeqno rc 7
+[2019-11-18 10:32:47 514][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 83] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() seqno : 7
+[2019-11-18 10:32:47 515][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService getSeqno_ApLoginAuditLog 86] - [ApLoginAuditLogService] getSeqno_ApLoginAuditLog() spend 765 msecs
+[2019-11-18 10:32:47 971][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.CommonService findChangeLogbyOid_changestat_refid_fcode 671] - [CommonService] findChangeLogbyOid_changestat_refid_fcode spend 55 msecs
+[2019-11-18 10:32:48 141][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.SysPlayerSrv findRole 71] - [SysPlayerSrv] findRole spend 594 msecs
+[2019-11-18 10:32:48 142][default task-1] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 962] - SuperUser驗證成功登入管理系統。
+[2019-11-18 10:32:48 365][default task-1] INFO  [stdout write 71] - Seqno = 16
+[2019-11-18 10:32:48 377][default task-1] INFO  [stdout write 71] - updateByExample = 1
+[2019-11-18 10:32:48 378][default task-1] INFO  [stdout write 71] - getSeqno spend 16 msecs.
+[2019-11-18 10:32:48 378][default task-1] INFO  [stdout write 71] - getSeqno rc 17
+[2019-11-18 10:32:48 379][default task-1] INFO  [stdout write 71] - getseqno spend 17 msecs.
+[2019-11-18 10:32:48 388][default task-1] INFO  [stdout write 71] - doActionLog spend 59 msecs.
+[2019-11-18 10:32:48 389][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 129] - [ApLoginAuditLogService] insertApLoginAuditLog()
+[2019-11-18 10:32:48 393][default task-1] DEBUG [com.provision.profxml.ibatis.service.sbfin.AuditLogService insertApLoginAuditLog 150] - [ApLoginAuditLogService] insertApLoginAuditLog() spend 4 msecs
+[2019-11-18 10:32:48 393][default task-1] DEBUG [com.pro.fxml.web.adm.DefaultComposer doLogin 1129] - logindoLogin() spend 1774 msecs
+[2019-11-18 10:32:48 479][default task-1] DEBUG [com.pro.fxml.web.adm.util.baseComposer getSSID 110] - 
+[2019-11-18 10:50:36 382][default task-3] DEBUG [com.pro.fxml.web.adm.MenuComposer getRedirect 42] - sender =FiscCheckInOut
+[2019-11-18 16:25:35 088][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.http.WebManager <init> 114] - Starting ZK 7.0.3 CE (build: 2014090212)
+[2019-11-18 16:25:35 101][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.sys.ConfigParser parseConfigXml 164] - Loading system default
+[2019-11-18 16:25:35 136][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing vfs:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/lib/zul.jar/metainfo/zk/zk.xml
+[2019-11-18 16:25:35 146][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/zk.xml
+[2019-11-18 16:25:37 570][ServerService Thread Pool -- 75] INFO  [org.quartz.simpl.SimpleThreadPool initialize 253] - Job execution threads will use class loader of thread: ServerService Thread Pool -- 75
+[2019-11-18 16:25:37 574][ServerService Thread Pool -- 75] INFO  [org.quartz.simpl.RAMJobStore initialize 143] - RAMJobStore initialized.
+[2019-11-18 16:25:37 574][ServerService Thread Pool -- 75] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 919] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-11-18 16:25:37 574][ServerService Thread Pool -- 75] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 923] - Quartz scheduler version: 1.4.5
+[2019-11-18 16:25:37 823][ServerService Thread Pool -- 75] ERROR [com.pro.proutils.schedule.SchedulerFactory initSpring 44] - 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sbfin_db_SqlMapClient' defined in file [C:\company\firstproject workspace\proFxmlWeb-console\config_sys\databaseConfig.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:485)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:270)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:883)
+	at com.provision.profxml.ibatis.service.sbfin.BeanFactory.getBean(BeanFactory.java:33)
+	at com.provision.profxml.ibatis.service.sbfin.EdiadmUserAndRoleService.<init>(EdiadmUserAndRoleService.java:15)
+	at com.pro.fxml.web.adm.batch.RoleInfo.<init>(RoleInfo.java:32)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.pro.proutils.schedule.Schedule.add(Schedule.java:95)
+	at com.pro.proutils.schedule.SchedulerFactory.initSpring(SchedulerFactory.java:42)
+	at com.pro.fxml.web.adm.util.InitProcess.init(InitProcess.java:25)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:303)
+	at io.undertow.servlet.core.ManagedServlet.createServlet(ManagedServlet.java:143)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:583)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:554)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet.core.DeploymentManagerImpl.start(DeploymentManagerImpl.java:596)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:97)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:65)
+	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientFactoryBean.buildSqlMapClient(SqlMapClientFactoryBean.java:326)
+	at org.springframework.orm.ibatis.SqlMapClientFactoryBean.afterPropertiesSet(SqlMapClientFactoryBean.java:280)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1390)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1359)
+	... 43 more
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:62)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:62)
+	... 48 more
+Caused by: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:123)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:84)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:102)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:72)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:60)
+	... 49 more
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:62)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapParser.parse(SqlMapParser.java:44)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser$10.process(SqlMapConfigParser.java:257)
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:121)
+	... 53 more
+Caused by: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:123)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:84)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:102)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:72)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:60)
+	... 56 more
+Caused by: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.sqlmap.engine.builder.xml.SqlStatementParser.resolveClass(SqlStatementParser.java:89)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlStatementParser.parseGeneralStatement(SqlStatementParser.java:64)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapParser$21.process(SqlMapParser.java:362)
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:121)
+	... 60 more
+Caused by: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.ibatis.common.resources.Resources.classForName(Resources.java:267)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlStatementParser.resolveClass(SqlStatementParser.java:84)
+	... 63 more
+[2019-11-18 16:25:37 823][ServerService Thread Pool -- 75] INFO  [org.quartz.core.QuartzScheduler start 370] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-11-18 16:27:13 195][ServerService Thread Pool -- 72] INFO  [org.zkoss.zk.ui.http.WebManager <init> 114] - Starting ZK 7.0.3 CE (build: 2014090212)
+[2019-11-18 16:27:13 212][ServerService Thread Pool -- 72] INFO  [org.zkoss.zk.ui.sys.ConfigParser parseConfigXml 164] - Loading system default
+[2019-11-18 16:27:13 262][ServerService Thread Pool -- 72] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing vfs:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/lib/zul.jar/metainfo/zk/zk.xml
+[2019-11-18 16:27:13 280][ServerService Thread Pool -- 72] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/zk.xml
+[2019-11-18 16:27:15 835][ServerService Thread Pool -- 72] INFO  [org.quartz.simpl.SimpleThreadPool initialize 253] - Job execution threads will use class loader of thread: ServerService Thread Pool -- 72
+[2019-11-18 16:27:15 844][ServerService Thread Pool -- 72] INFO  [org.quartz.simpl.RAMJobStore initialize 143] - RAMJobStore initialized.
+[2019-11-18 16:27:15 845][ServerService Thread Pool -- 72] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 919] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-11-18 16:27:15 845][ServerService Thread Pool -- 72] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 923] - Quartz scheduler version: 1.4.5
+[2019-11-18 16:27:16 123][ServerService Thread Pool -- 72] ERROR [com.pro.proutils.schedule.SchedulerFactory initSpring 44] - 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sbfin_db_SqlMapClient' defined in file [C:\company\firstproject workspace\proFxmlWeb-console\config_sys\databaseConfig.xml]: Invocation of init method failed; nested exception is java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:485)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:270)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:883)
+	at com.provision.profxml.ibatis.service.sbfin.BeanFactory.getBean(BeanFactory.java:33)
+	at com.provision.profxml.ibatis.service.sbfin.EdiadmUserAndRoleService.<init>(EdiadmUserAndRoleService.java:15)
+	at com.pro.fxml.web.adm.batch.RoleInfo.<init>(RoleInfo.java:32)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.pro.proutils.schedule.Schedule.add(Schedule.java:95)
+	at com.pro.proutils.schedule.SchedulerFactory.initSpring(SchedulerFactory.java:42)
+	at com.pro.fxml.web.adm.util.InitProcess.init(InitProcess.java:25)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:303)
+	at io.undertow.servlet.core.ManagedServlet.createServlet(ManagedServlet.java:143)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:583)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:554)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet.core.DeploymentManagerImpl.start(DeploymentManagerImpl.java:596)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:97)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.lang.RuntimeException: Error occurred.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:65)
+	at com.ibatis.sqlmap.client.SqlMapClientBuilder.buildSqlMapClient(SqlMapClientBuilder.java:90)
+	at org.springframework.orm.ibatis.SqlMapClientFactoryBean.buildSqlMapClient(SqlMapClientFactoryBean.java:326)
+	at org.springframework.orm.ibatis.SqlMapClientFactoryBean.afterPropertiesSet(SqlMapClientFactoryBean.java:280)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1390)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1359)
+	... 43 more
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:62)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser.parse(SqlMapConfigParser.java:62)
+	... 48 more
+Caused by: java.lang.RuntimeException: Error parsing XPath '/sqlMapConfig/sqlMap'.  Cause: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:123)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:84)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:102)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:72)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:60)
+	... 49 more
+Caused by: com.ibatis.common.xml.NodeletException: Error parsing XML.  Cause: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:62)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapParser.parse(SqlMapParser.java:44)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapConfigParser$10.process(SqlMapConfigParser.java:257)
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:121)
+	... 53 more
+Caused by: java.lang.RuntimeException: Error parsing XPath '/sqlMap/select'.  Cause: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:123)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:84)
+	at com.ibatis.common.xml.NodeletParser.process(NodeletParser.java:102)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:72)
+	at com.ibatis.common.xml.NodeletParser.parse(NodeletParser.java:60)
+	... 56 more
+Caused by: com.ibatis.sqlmap.client.SqlMapException: Error.  Could not initialize class.  Cause: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at com.ibatis.sqlmap.engine.builder.xml.SqlStatementParser.resolveClass(SqlStatementParser.java:89)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlStatementParser.parseGeneralStatement(SqlStatementParser.java:64)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlMapParser$21.process(SqlMapParser.java:362)
+	at com.ibatis.common.xml.NodeletParser.processNodelet(NodeletParser.java:121)
+	... 60 more
+Caused by: java.lang.ClassNotFoundException: com.provision.profxml.ibatis.model.sbfin.FinOutputFlatExample from [Module "deployment.proFxmlWeb-console.war" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:255)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:410)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:398)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at com.ibatis.common.resources.Resources.classForName(Resources.java:267)
+	at com.ibatis.sqlmap.engine.builder.xml.SqlStatementParser.resolveClass(SqlStatementParser.java:84)
+	... 63 more
+[2019-11-18 16:27:16 128][ServerService Thread Pool -- 72] INFO  [org.quartz.core.QuartzScheduler start 370] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-11-18 16:32:05 368][ServerService Thread Pool -- 72] INFO  [org.zkoss.zk.ui.http.WebManager <init> 114] - Starting ZK 7.0.3 CE (build: 2014090212)
+[2019-11-18 16:32:05 386][ServerService Thread Pool -- 72] INFO  [org.zkoss.zk.ui.sys.ConfigParser parseConfigXml 164] - Loading system default
+[2019-11-18 16:32:05 440][ServerService Thread Pool -- 72] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing vfs:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/lib/zul.jar/metainfo/zk/zk.xml
+[2019-11-18 16:32:05 456][ServerService Thread Pool -- 72] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/zk.xml
+[2019-11-18 16:32:08 170][ServerService Thread Pool -- 72] INFO  [org.quartz.simpl.SimpleThreadPool initialize 253] - Job execution threads will use class loader of thread: ServerService Thread Pool -- 72
+[2019-11-18 16:32:08 186][ServerService Thread Pool -- 72] INFO  [org.quartz.simpl.RAMJobStore initialize 143] - RAMJobStore initialized.
+[2019-11-18 16:32:08 186][ServerService Thread Pool -- 72] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 919] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-11-18 16:32:08 186][ServerService Thread Pool -- 72] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 923] - Quartz scheduler version: 1.4.5
+[2019-11-18 16:32:08 186][ServerService Thread Pool -- 72] ERROR [com.pro.proutils.schedule.SchedulerFactory initSpring 44] - 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sbfin_db_SqlMapClient' defined in file [C:\company\firstproject workspace\proFxmlWeb-console\config_sys\databaseConfig.xml]: Invocation of init method failed; nested exception is java.io.FileNotFoundException: WEB-INF\config_sys\SqlMapConfig_nbediDb.xml (系統找不到指定的路徑。)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:485)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:270)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:883)
+	at com.provision.profxml.ibatis.service.sbfin.BeanFactory.getBean(BeanFactory.java:33)
+	at com.provision.profxml.ibatis.service.sbfin.EdiadmUserAndRoleService.<init>(EdiadmUserAndRoleService.java:15)
+	at com.pro.fxml.web.adm.batch.RoleInfo.<init>(RoleInfo.java:32)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.pro.proutils.schedule.Schedule.add(Schedule.java:95)
+	at com.pro.proutils.schedule.SchedulerFactory.initSpring(SchedulerFactory.java:42)
+	at com.pro.fxml.web.adm.util.InitProcess.init(InitProcess.java:25)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:303)
+	at io.undertow.servlet.core.ManagedServlet.createServlet(ManagedServlet.java:143)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:583)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:554)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet.core.DeploymentManagerImpl.start(DeploymentManagerImpl.java:596)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:97)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.io.FileNotFoundException: WEB-INF\config_sys\SqlMapConfig_nbediDb.xml (系統找不到指定的路徑。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.springframework.core.io.FileSystemResource.getInputStream(FileSystemResource.java:85)
+	at org.springframework.orm.ibatis.SqlMapClientFactoryBean.buildSqlMapClient(SqlMapClientFactoryBean.java:315)
+	at org.springframework.orm.ibatis.SqlMapClientFactoryBean.afterPropertiesSet(SqlMapClientFactoryBean.java:280)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1390)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1359)
+	... 43 more
+[2019-11-18 16:32:08 203][ServerService Thread Pool -- 72] INFO  [org.quartz.core.QuartzScheduler start 370] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-11-18 16:34:47 614][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.http.WebManager <init> 114] - Starting ZK 7.0.3 CE (build: 2014090212)
+[2019-11-18 16:34:47 614][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.sys.ConfigParser parseConfigXml 164] - Loading system default
+[2019-11-18 16:34:47 659][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing vfs:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/lib/zul.jar/metainfo/zk/zk.xml
+[2019-11-18 16:34:47 659][ServerService Thread Pool -- 75] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/zk.xml
+[2019-11-18 16:34:50 346][ServerService Thread Pool -- 75] INFO  [org.quartz.simpl.SimpleThreadPool initialize 253] - Job execution threads will use class loader of thread: ServerService Thread Pool -- 75
+[2019-11-18 16:34:50 360][ServerService Thread Pool -- 75] INFO  [org.quartz.simpl.RAMJobStore initialize 143] - RAMJobStore initialized.
+[2019-11-18 16:34:50 360][ServerService Thread Pool -- 75] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 919] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-11-18 16:34:50 360][ServerService Thread Pool -- 75] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 923] - Quartz scheduler version: 1.4.5
+[2019-11-18 16:34:50 360][ServerService Thread Pool -- 75] ERROR [com.pro.proutils.schedule.SchedulerFactory initSpring 44] - 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sbfin_db_SqlMapClient' defined in file [C:\company\firstproject workspace\proFxmlWeb-console\config_sys\databaseConfig.xml]: Invocation of init method failed; nested exception is java.io.FileNotFoundException: \ap\jboss-xml\SqlMapConfig_sbfinDb.xml (系統找不到指定的路徑。)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:540)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory$1.run(AbstractAutowireCapableBeanFactory.java:485)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:270)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:170)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:883)
+	at com.provision.profxml.ibatis.service.sbfin.BeanFactory.getBean(BeanFactory.java:33)
+	at com.provision.profxml.ibatis.service.sbfin.EdiadmUserAndRoleService.<init>(EdiadmUserAndRoleService.java:15)
+	at com.pro.fxml.web.adm.batch.RoleInfo.<init>(RoleInfo.java:32)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.pro.proutils.schedule.Schedule.add(Schedule.java:95)
+	at com.pro.proutils.schedule.SchedulerFactory.initSpring(SchedulerFactory.java:42)
+	at com.pro.fxml.web.adm.util.InitProcess.init(InitProcess.java:25)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:303)
+	at io.undertow.servlet.core.ManagedServlet.createServlet(ManagedServlet.java:143)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:583)
+	at io.undertow.servlet.core.DeploymentManagerImpl$2.call(DeploymentManagerImpl.java:554)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:42)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1502)
+	at io.undertow.servlet.core.DeploymentManagerImpl.start(DeploymentManagerImpl.java:596)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService.startContext(UndertowDeploymentService.java:97)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentService$1.run(UndertowDeploymentService.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1985)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1487)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1378)
+	at java.lang.Thread.run(Unknown Source)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:485)
+Caused by: java.io.FileNotFoundException: \ap\jboss-xml\SqlMapConfig_sbfinDb.xml (系統找不到指定的路徑。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.springframework.core.io.FileSystemResource.getInputStream(FileSystemResource.java:85)
+	at org.springframework.orm.ibatis.SqlMapClientFactoryBean.buildSqlMapClient(SqlMapClientFactoryBean.java:315)
+	at org.springframework.orm.ibatis.SqlMapClientFactoryBean.afterPropertiesSet(SqlMapClientFactoryBean.java:280)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1390)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1359)
+	... 43 more
+[2019-11-18 16:34:50 360][ServerService Thread Pool -- 75] INFO  [org.quartz.core.QuartzScheduler start 370] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-11-18 16:37:20 957][ServerService Thread Pool -- 76] INFO  [org.zkoss.zk.ui.http.WebManager <init> 114] - Starting ZK 7.0.3 CE (build: 2014090212)
+[2019-11-18 16:37:20 957][ServerService Thread Pool -- 76] INFO  [org.zkoss.zk.ui.sys.ConfigParser parseConfigXml 164] - Loading system default
+[2019-11-18 16:37:20 998][ServerService Thread Pool -- 76] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing vfs:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/lib/zul.jar/metainfo/zk/zk.xml
+[2019-11-18 16:37:20 998][ServerService Thread Pool -- 76] INFO  [org.zkoss.zk.ui.sys.ConfigParser parse 271] - Parsing file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/zk.xml
+[2019-11-18 16:37:23 805][ServerService Thread Pool -- 76] INFO  [org.quartz.simpl.SimpleThreadPool initialize 253] - Job execution threads will use class loader of thread: ServerService Thread Pool -- 76
+[2019-11-18 16:37:23 820][ServerService Thread Pool -- 76] INFO  [org.quartz.simpl.RAMJobStore initialize 143] - RAMJobStore initialized.
+[2019-11-18 16:37:23 820][ServerService Thread Pool -- 76] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 919] - Quartz scheduler 'DefaultQuartzScheduler' initialized from default resource file in Quartz package: 'quartz.properties'
+[2019-11-18 16:37:23 820][ServerService Thread Pool -- 76] INFO  [org.quartz.impl.StdSchedulerFactory instantiate 923] - Quartz scheduler version: 1.4.5
+[2019-11-18 16:37:24 591][ServerService Thread Pool -- 76] INFO  [com.pro.proutils.schedule.Schedule add 129] - Add Job Name=[RoleInfo] Group=[DEFAULT] expression=[0 0 7 * * ?]
+[2019-11-18 16:37:24 591][ServerService Thread Pool -- 76] INFO  [org.quartz.core.QuartzScheduler start 370] - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+[2019-11-18 16:37:26 232][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh_TW
+[2019-11-18 16:37:26 235][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl load 380] - Opening file:/C:/company/firstproject%20workspace/jboss-eap-7.2/standalone/deployments/proFxmlWeb-console.war/WEB-INF/i3-label_zh_TW.properties
+[2019-11-18 16:37:26 240][default task-1] INFO  [org.zkoss.util.resource.impl.LabelLoaderImpl loadLabels 239] - Loading labels for zh
